@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import Header from "../components/Header";
+import HeroHeader from "../components/HeroHeader";
 
 export default function Home() {
   return (
@@ -32,7 +32,7 @@ export default function Home() {
           rel="stylesheet"
         />
       </Head>
-      <Header isHero={true} />
+      <HeroHeader />
     </div>
   );
 }
