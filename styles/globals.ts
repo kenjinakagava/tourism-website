@@ -1,11 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
 const Global = createGlobalStyle`
-html,
-body {
-  padding: 0;
-  margin: 0;
-}
 
 a {
   color: inherit;
@@ -14,11 +9,13 @@ a {
 
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 img {
-  max-inline-size: 100%;
-  block-size: auto;
+  max-width: 100%;
+  height: auto;
   display: block;
 }
 
@@ -27,6 +24,17 @@ h2,
 h3 {
   font-family: 'Dosis', sans-serif;
 }
+
+ul {
+  list-style: none;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
 `;
 
 export default Global;
