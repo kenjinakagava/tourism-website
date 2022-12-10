@@ -11,7 +11,16 @@ export default function Home() {
           name="description"
           content="Explore the beauty and culture of our city with our award-winning tours. From historic landmarks to hidden gems, we have something for everyone. Book your adventure today and experience the best of our destination."
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="icon"
+          href="/FaviconDark.ico"
+          media="(prefers-color-scheme: light)"
+        />
+        <link
+          rel="icon"
+          href="/FaviconLight.ico"
+          media="(prefers-color-scheme: dark)"
+        />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
@@ -23,7 +32,7 @@ export default function Home() {
           rel="stylesheet"
         />
       </Head>
-      <Header />
+      <Header isHero={true} />
     </div>
   );
 }
