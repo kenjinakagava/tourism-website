@@ -6,11 +6,12 @@ import Header from "./Header";
 
 const HeroBanner = styled(Image)`
   object-fit: cover;
-  position: relative;
   z-index: -1;
 `;
 
 const HeroTagline = styled.h1`
+  //
+  min-height: calc(100vh - 156px);
   max-width: 90%;
   margin: 0 auto;
   margin-top: 5rem;
@@ -20,6 +21,7 @@ const HeroTagline = styled.h1`
   text-transform: uppercase;
   filter: drop-shadow(1px 1px 1px #333);
   @media (min-width: 768px) {
+    min-height: calc(100vh - 226px);
     font-size: 5rem;
     margin-top: 10rem;
   }
