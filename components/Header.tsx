@@ -1,14 +1,14 @@
 import Nav from "./Nav";
-
+import HeroHeader from "./HeroHeader";
 interface HeaderProps {
-  children?: React.ReactNode;
+  isHero?: boolean;
 }
 
-const Header = ({ children }: HeaderProps) => {
+const Header = ({ isHero }: HeaderProps) => {
   return (
     <header>
       <Nav />
-      {children}
+      {isHero === true ? <HeroHeader /> : null}
     </header>
   );
 };

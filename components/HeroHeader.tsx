@@ -1,11 +1,8 @@
-import Image from "next/image";
 import styled from "styled-components";
 
 import RioDeJaneiroFullHD from "../public/Riodejaneirofullhd.webp";
 import RioDeJaneiroHD from "../public/Riodejaneirohd.webp";
-import RioDeJaneiroMobile from "../public/Riodejaneiromobile.webp";
 
-import Header from "./Header";
 const HeroTagline = styled.h1`
   //
   display: flex;
@@ -43,16 +40,16 @@ const GradientText = styled.span`
 
 const HeroHeader = () => {
   return (
-    <Header>
+    <>
       <HeroBanner
         src={RioDeJaneiroFullHD.src}
         alt=""
-        srcSet={`${RioDeJaneiroMobile} 880w, ${RioDeJaneiroHD} 720w, ${RioDeJaneiroFullHD} 1080w`}
+        srcSet={`${RioDeJaneiroHD.src} 840w, ${RioDeJaneiroFullHD.src} 1080w`}
       />
       <HeroTagline>
         Brazil, a <GradientText>paradise</GradientText>
       </HeroTagline>
-    </Header>
+    </>
   );
 };
 
