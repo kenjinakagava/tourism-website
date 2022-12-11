@@ -6,24 +6,23 @@ import Header from "./Header";
 
 const HeroBanner = styled(Image)`
   object-fit: cover;
-  z-index: -1;
 `;
 
 const HeroTagline = styled.h1`
   //
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   min-height: 100vh;
   max-width: 90%;
   margin: 0 auto;
-  margin-top: 5rem;
   color: white;
   font-size: 3rem;
   text-align: center;
   text-transform: uppercase;
   filter: drop-shadow(1px 1px 1px #333);
   @media (min-width: 768px) {
-    min-height: calc(100vh - 226px);
     font-size: 5rem;
-    margin-top: 10rem;
   }
 `;
 
@@ -33,6 +32,7 @@ const HeroWrapper = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: -1;
 `;
 
 const GradientText = styled.span`
