@@ -11,7 +11,7 @@ const HeroBanner = styled(Image)`
 
 const HeroTagline = styled.h1`
   //
-  min-height: calc(100vh - 156px);
+  min-height: 100vh;
   max-width: 90%;
   margin: 0 auto;
   margin-top: 5rem;
@@ -27,6 +27,14 @@ const HeroTagline = styled.h1`
   }
 `;
 
+const HeroWrapper = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+`;
+
 const GradientText = styled.span`
   background-image: linear-gradient(to right, #a8ff78, #78ffd6);
   -webkit-background-clip: text;
@@ -37,10 +45,12 @@ const GradientText = styled.span`
 const HeroHeader = () => {
   return (
     <Header>
-      <HeroBanner src={RioDeJaneiro} alt="" priority={true} fill={true} />
-      <HeroTagline>
-        Brazil, a <GradientText>paradise</GradientText>
-      </HeroTagline>
+      <HeroWrapper>
+        <HeroBanner src={RioDeJaneiro} alt="" fill={true} />
+        <HeroTagline>
+          Brazil, a <GradientText>paradise</GradientText>
+        </HeroTagline>
+      </HeroWrapper>
     </Header>
   );
 };
