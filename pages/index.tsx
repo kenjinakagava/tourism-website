@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import HeroHeader from "../components/HeroHeader";
+import Header from "../components/Header";
 
 export default function Home() {
   return (
@@ -22,7 +22,7 @@ export default function Home() {
           media="(prefers-color-scheme: dark)"
         />
       </Head>
-      <HeroHeader />
+      <Header isHero={true} />
     </div>
   );
 }
