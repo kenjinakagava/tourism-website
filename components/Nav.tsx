@@ -3,7 +3,7 @@ import Link from "next/link";
 import styled from "styled-components";
 import LogoDesktop from "../public/LogoDesktop.svg";
 import LogoMobileWhite from "../public/LogoMobileWhite.svg";
-import HamburgerMenu from "./HamburgerMenu";
+import HamburgerMenu from "../features/HamburgerMenu/HamburgerMenu";
 
 const StyledNav = styled.nav`
   width: 100%;
