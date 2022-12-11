@@ -21,16 +21,6 @@ export default function Home() {
           href="/FaviconLight.ico"
           media="(prefers-color-scheme: dark)"
         />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap"
-          rel="stylesheet"
-        />
       </Head>
       <HeroHeader />
     </div>
