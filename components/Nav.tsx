@@ -1,8 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import styled from "styled-components";
-import Tourismbrazil from "../public/Tourismbrazil.svg";
-import Tourismbrazilmobile from "../public/Tourismbrazilmobile.svg";
+import LogoDesktop from "../public/LogoDesktop.svg";
+import LogoMobileWhite from "../public/LogoMobileWhite.svg";
+import HamburgerMenu from "./HamburgerMenu";
 
 const StyledNav = styled.nav`
   width: 100%;
@@ -46,19 +47,13 @@ const NavList = styled.ul`
   }
 `;
 
-const HamburgerMenu = styled.li`
-  @media (min-width: 768px) {
-    display: none;
-  }
-`;
-
 const Nav = () => {
   return (
     <StyledNav>
       <NavContentWrapper>
         <Link href="/" aria-label="Go to home page">
-          <Logo src={Tourismbrazilmobile} alt="" />
-          <DesktopLogo src={Tourismbrazil} alt="" />
+          <Logo src={LogoMobileWhite} alt="" />
+          <DesktopLogo src={LogoDesktop} alt="" />
         </Link>
         <NavList>
           <li>
@@ -85,18 +80,7 @@ const Nav = () => {
               </svg>
             </Link>
           </li>
-          <HamburgerMenu>
-            <button aria-label="Open menu">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-              >
-                <path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z" />
-              </svg>
-            </button>
-          </HamburgerMenu>
+          <HamburgerMenu />
         </NavList>
       </NavContentWrapper>
     </StyledNav>
