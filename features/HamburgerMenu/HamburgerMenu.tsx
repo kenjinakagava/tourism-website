@@ -1,14 +1,20 @@
 import { useState } from "react";
 import styled from "styled-components";
-import CloseButton from "./CloseButton";
-import MenuIcon from "./MenuIcon";
 import VerticalMenu from "./VerticalMenu";
+import { FaBars, FaTimes } from "react-icons/fa";
 
-const Hamburger = styled.li`
-  position: relative;
+interface HamburgerMenuProps {
+  isOpen: boolean;
+}
+
+const Hamburger = styled.div<HamburgerMenuProps>`
+  position: fixed;
+  right: 2.5%;
   z-index: 99;
   svg {
-    fill: white;
+    width: 24px;
+    height: 24px;
+    fill: ${(props) => (props.isOpen === true ? "black" : "white")};
     filter: drop-shadow(0px 1px 1px #333);
   }
   @media (min-width: 768px) {
@@ -27,9 +33,9 @@ const HamburgerMenu = () => {
   };
   return (
     <>
-      <Hamburger>
+      <Hamburger isOpen={isOpen}>
         <button aria-label="Open menu" onClick={toggleMenu}>
-          {isOpen ? <CloseButton /> : <MenuIcon />}
+          {isOpen === true ? <FaTimes /> : <FaBars />}
         </button>
       </Hamburger>
       {/* 

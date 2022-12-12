@@ -45,6 +45,8 @@ const HeroHeader = () => {
         src={RioDeJaneiroFullHD.src}
         alt=""
         srcSet={`${RioDeJaneiroHD.src} 840w, ${RioDeJaneiroFullHD.src} 1080w`}
+        width="1080"
+        height="720"
       />
       <HeroTagline>
         Brazil, a <GradientText>paradise</GradientText>
