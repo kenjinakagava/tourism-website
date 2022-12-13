@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Brazil Tourism</title>
+        <title>Tourism Brazil</title>
         <meta
           name="description"
           content="Explore the beauty and culture of our city with our award-winning tours. From historic landmarks to hidden gems, we have something for everyone. Book your adventure today and experience the best of our destination."

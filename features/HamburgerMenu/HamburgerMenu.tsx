@@ -1,13 +1,13 @@
 import { useState } from "react";
 import styled from "styled-components";
-import VerticalMenu from "./VerticalMenu";
+import VerticalMenu from "../VerticalMenu/VerticalMenu";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 interface HamburgerMenuProps {
   isOpen: boolean;
 }
 
-const Hamburger = styled.div<HamburgerMenuProps>`
+const Hamburger = styled.button<HamburgerMenuProps>`
   position: fixed;
   right: 2.5%;
   z-index: 99;
@@ -33,10 +33,8 @@ const HamburgerMenu = () => {
   };
   return (
     <>
-      <Hamburger isOpen={isOpen}>
-        <button aria-label="Open menu" onClick={toggleMenu}>
-          {isOpen === true ? <FaTimes /> : <FaBars />}
-        </button>
+      <Hamburger isOpen={isOpen} aria-label="Open menu" onClick={toggleMenu}>
+        {isOpen === true ? <FaTimes /> : <FaBars />}
       </Hamburger>
       {/* 
         this isn't in the conditional "isOpen ? <VerticalMenu isOpen={isOpen}/>"

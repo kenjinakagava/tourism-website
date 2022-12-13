@@ -11,7 +11,7 @@ const Logo = styled.img`
   filter: drop-shadow(0px 1px 1px #333);
   @media (min-width: 768px) {
     width: 125px;
-    height: 50px;
+    height: 60px;
   }
 `;
 
