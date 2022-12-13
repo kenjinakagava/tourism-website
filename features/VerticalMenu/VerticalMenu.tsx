@@ -43,6 +43,10 @@ const IconWrapper = styled.ul`
 `;
 
 const VerticalMenu = ({ isOpen }: VerticalMenuProps) => {
+  // disable scroll while menu is open
+  isOpen
+    ? (document.body.style.overflow = "hidden")
+    : (document.body.style.overflow = "auto");
   return (
     <MenuScreen isOpen={isOpen}>
       <MenuWrapper>
@@ -59,8 +63,6 @@ const VerticalMenu = ({ isOpen }: VerticalMenuProps) => {
             ariaLabel=""
             icon={<FaHeart />}
           />
-        </IconWrapper>
-        <IconWrapper>
           <IconBlock
             title="Destinations"
             href="/destinations"
