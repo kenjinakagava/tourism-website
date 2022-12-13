@@ -9,9 +9,8 @@ const Logo = styled.img`
   width: 60px;
   height: 60px;
   filter: drop-shadow(0px 1px 1px #333);
-  @media (min-width: 768px) {
+  @media (min-width: 900px) {
     width: 125px;
-    height: 60px;
   }
 `;
 
@@ -42,6 +41,10 @@ const NavIconLinks = styled.ul`
     fill: white;
     filter: drop-shadow(0px 1px 1px #333);
   }
+  a {
+    color: white;
+    font-family: "Dosis", sans-serif;
+  }
 `;
 
 const Nav = () => (
@@ -49,10 +52,27 @@ const Nav = () => (
     <NavContentWrapper>
       <Link href="/" aria-label="Go to home page">
         <picture>
-          <source srcSet={LogoDesktop.src} media="(min-width: 768px)" />
+          <source srcSet={LogoDesktop.src} media="(min-width: 900px)" />
           <Logo src={LogoMobile.src} alt="" />
         </picture>
       </Link>
+      <NavIconLinks>
+        <li>
+          <Link href="/destinations">Destinations</Link>
+        </li>
+        <li>
+          <Link href="/experiences">Experiences</Link>
+        </li>
+        <li>
+          <Link href="/travel-information">Travel Information</Link>
+        </li>
+        <li>
+          <Link href="/regions">Regions</Link>
+        </li>
+        <li>
+          <Link href="/special-visa">Special Visa</Link>
+        </li>
+      </NavIconLinks>
       <NavIconLinks>
         <li>
           <Link href="/search" aria-label="Go to search page">
