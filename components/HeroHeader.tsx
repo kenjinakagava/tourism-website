@@ -7,7 +7,7 @@ const HeroTagline = styled.h1`
   //
   display: flex;
   flex-direction: column;
-  padding-top: 8rem;
+  justify-content: center;
   min-height: calc(100vh - 76px);
   max-width: 90%;
   margin: 0 auto;
@@ -18,7 +18,6 @@ const HeroTagline = styled.h1`
   filter: drop-shadow(1px 1px 1px #333);
   @media (min-width: 768px) {
     font-size: 5rem;
-    padding-top: 4rem;
   }
 `;
 
