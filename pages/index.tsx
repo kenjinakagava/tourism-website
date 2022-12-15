@@ -4,6 +4,7 @@ import Main from "../components/Main";
 import SectionImg1 from "../public/Sectionimg1.jpg";
 import SectionImg2 from "../public/Sectionimg2.png";
 import SplitContainer from "@/components/SplitContainer";
+import CenteredSection from "@/components/CenteredSection";
 
 export default function Home() {
   return (
@@ -27,10 +28,12 @@ export default function Home() {
       </Head>
       <Header isHero={true} />
       <Main>
-        <section>
+        <CenteredSection>
           <SplitContainer
             src={SectionImg1}
             alt={"a"}
+            href="/"
+            buttonLabel="DISCOVER"
             title="DISCOVER THE BEAUTY OF BRAZIL"
             paragraph="Come and experience the magic of Brazil! With its stunning
               beaches, vibrant culture, and exciting cities, Brazil is the
@@ -41,11 +44,13 @@ export default function Home() {
           <SplitContainer
             src={SectionImg2}
             alt={"a"}
+            href="/"
+            buttonLabel="EXPLORE"
             title="EXPLORE BRAZIL'S NATURAL WONDERS."
             orientation="left"
             paragraph="Brazil is a country rich in natural beauty, from the Amazon rainforest to the beaches of Rio de Janeiro. One of its most famous attractions is the Iguazu Falls, a series of over 275 waterfalls on the border between Brazil and Argentina. These falls are a must-see for anyone interested in experiencing Brazil's stunning flora and landscapes."
           />
-        </section>
+        </CenteredSection>
         <section></section>
       </Main>
     </div>

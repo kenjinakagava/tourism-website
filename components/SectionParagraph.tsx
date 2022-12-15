@@ -7,6 +7,7 @@ interface ParagraphProps {
 }
 
 const Paragraph = styled.p<Pick<ParagraphProps, "textAlign" | "color">>`
+  margin-bottom: 1rem;
   font-size: 1.25rem;
   font-family: sans-serif;
   color: ${(props) => (props.color ? props.color : "black")};

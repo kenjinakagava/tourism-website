@@ -2,6 +2,8 @@ import styled from "styled-components";
 import Image from "next/image";
 import SectionParagraph from "./SectionParagraph";
 import SectionTitle from "./SectionTitle";
+import LinkButton from "./LinkButton";
+
 interface SplitProps {
   src: { src: string; width: number; height: number };
   alt: string;
@@ -10,6 +12,8 @@ interface SplitProps {
   paragraph: string;
   textAlign?: "left" | "center" | "right" | string;
   color?: string;
+  buttonLabel: string;
+  href: string;
 }
 
 const Container = styled.div`
@@ -59,6 +63,7 @@ const SplitContainer = (props: SplitProps) => {
         <SectionParagraph color={props.color} textAlign={props.textAlign}>
           {props.paragraph}
         </SectionParagraph>
+        <LinkButton href={props.href}>{props.buttonLabel}</LinkButton>
       </SplitContent>
     </Container>
   );

@@ -4,12 +4,7 @@ interface MainProps {
   children: React.ReactNode;
 }
 
-const MainWrapper = styled.main`
-  min-height: 100vh;
-  width: 80%;
-  margin: 0 auto;
-  margin-top: 6.25rem;
-`;
+const MainWrapper = styled.main``;
 
 const Main = ({ children }: MainProps) => {
   return <MainWrapper>{children}</MainWrapper>;
