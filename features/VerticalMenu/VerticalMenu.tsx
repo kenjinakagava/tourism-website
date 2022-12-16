@@ -17,7 +17,7 @@ const MenuScreen = styled.div<VerticalMenuProps>`
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 98;
   width: 100%;
   background: white;
   transition: 0.2s ease;

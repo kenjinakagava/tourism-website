@@ -5,7 +5,8 @@ import SectionImg1 from "../public/Sectionimg1.jpg";
 import SectionImg2 from "../public/Sectionimg2.png";
 import SplitContainer from "@/components/SplitContainer";
 import CenteredSection from "@/components/CenteredSection";
-
+import FullSection from "@/components/FullSection";
+import RegionSlider from "features/RegionSlider/RegionSlider";
 export default function Home() {
   return (
     <div>
@@ -51,7 +52,9 @@ export default function Home() {
             paragraph="Brazil is a country rich in natural beauty, from the Amazon rainforest to the beaches of Rio de Janeiro. One of its most famous attractions is the Iguazu Falls, a series of over 275 waterfalls on the border between Brazil and Argentina. These falls are a must-see for anyone interested in experiencing Brazil's stunning flora and landscapes."
           />
         </CenteredSection>
-        <section></section>
+        <FullSection>
+          <RegionSlider />
+        </FullSection>
       </Main>
     </div>
   );
