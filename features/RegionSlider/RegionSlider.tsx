@@ -33,34 +33,23 @@ const StyledSwiper = styled(Swiper)`
   img {
     object-fit: cover;
     height: 100%;
-    margin: 0 auto;
+    margin-left: auto;
   }
 `;
 
 const SlideContent = styled.div`
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+  justify-content: space-around;
   position: absolute;
   z-index: 51;
-  top: 18%;
-  left: 10%;
-  transform: translateY(-50%);
+  top: 0;
+  left: 0%;
+  right: 0%;
+  gap: 1rem;
   * {
     color: white;
-  }
-`;
-
-const RegionGraphic = styled.div`
-  display: block;
-  position: absolute;
-  bottom: 10%;
-  right: 0;
-  left: 0;
-  z-index: 51;
-  @media (min-width: 768px) {
-    right: 5rem;
-    top: 50%;
-    left: unset;
-    transform: translateY(-50%);
-    bottom: unset;
   }
 `;
 
@@ -73,60 +62,62 @@ const RegionSlider = () => {
       onSlideChange={() => console.log("slide change")}
       onSwiper={(swiper) => console.log(swiper)}
       navigation={true}
+      pagination={true}
     >
       <SwiperSlide>
-        <Image src={NorthRegion} alt="" />
+        <Image src={NorthRegion} alt="" fill={true} />
         <SlideContent>
-          <SectionTitle>North</SectionTitle>
-          <SectionParagraph>
-            The North of Brazil is a region with many beautiful and interesting
-            sights to see.
-          </SectionParagraph>
-          <Buttonwithicon href="/north">EXPERIENCE THE NORTH</Buttonwithicon>
-        </SlideContent>
-        <RegionGraphic>
+          <Container>
+            <SectionTitle>North</SectionTitle>
+            <SectionParagraph>
+              The North of Brazil is a region with many beautiful and
+              interesting sights to see.
+            </SectionParagraph>
+            <Buttonwithicon href="/north">EXPERIENCE THE NORTH</Buttonwithicon>
+          </Container>
           <Image src={NorthMap} alt="" />
-        </RegionGraphic>
+        </SlideContent>
         <BlackFilter opacity={0.2} />
       </SwiperSlide>
       <SwiperSlide>
         <Image src={NortheastRegion} alt="" />
         <SlideContent>
-          <SectionTitle>Northeast</SectionTitle>
-          <SectionParagraph>
-            The Northeast Region of Brazil is a stunning and diverse region that
-            offers something for everyone.
-          </SectionParagraph>
-          <Buttonwithicon href="/northeast">
-            EXPERIENCE THE NORTHEAST
-          </Buttonwithicon>
-        </SlideContent>
-        <RegionGraphic>
+          <Container>
+            <SectionTitle>Northeast</SectionTitle>
+            <SectionParagraph>
+              The Northeast Region of Brazil is a stunning and diverse region
+              that offers something for everyone.
+            </SectionParagraph>
+            <Buttonwithicon href="/northeast">
+              EXPERIENCE THE NORTHEAST
+            </Buttonwithicon>
+          </Container>
           <Image src={NortheastMap} alt="" />
-        </RegionGraphic>
+        </SlideContent>
         <BlackFilter opacity={0.2} />
       </SwiperSlide>
       <SwiperSlide>
         <Image src={CentralWestRegion} alt="" />
         <SlideContent>
-          <SectionTitle>Central-West</SectionTitle>
-          <SectionParagraph>
-            The Center-West Region of Brazil is a vibrant and dynamic region
-            that offers a wide range of attractions and activities for visitors.
-          </SectionParagraph>
-          <Buttonwithicon href="/central-west">
-            EXPERIENCE THE CENTRAL-WEST
-          </Buttonwithicon>
-        </SlideContent>
-        <RegionGraphic>
+          <Container>
+            <SectionTitle>Central-West</SectionTitle>
+            <SectionParagraph>
+              The Center-West Region of Brazil is a vibrant and dynamic region
+              that offers a wide range of attractions and activities for
+              visitors.
+            </SectionParagraph>
+            <Buttonwithicon href="/central-west">
+              EXPERIENCE THE CENTRAL-WEST
+            </Buttonwithicon>
+          </Container>
           <Image src={CentralWestMap} alt="" />
-        </RegionGraphic>
+        </SlideContent>
         <BlackFilter opacity={0.2} />
       </SwiperSlide>
       <SwiperSlide>
         <Image src={SoutheastRegion} alt="" />
-        <Container>
-          <SlideContent>
+        <SlideContent>
+          <Container>
             <SectionTitle>Southeast</SectionTitle>
             <SectionParagraph>
               The southeast region of Brazil is a must-visit destination for
@@ -136,26 +127,24 @@ const RegionSlider = () => {
             <Buttonwithicon href="/southeast">
               EXPERIENCE THE SOUTHEAST
             </Buttonwithicon>
-          </SlideContent>
-          <RegionGraphic>
-            <Image src={SoutheastMap} alt="" />
-          </RegionGraphic>
-        </Container>
+          </Container>
+          <Image src={SoutheastMap} alt="" />
+        </SlideContent>
         <BlackFilter opacity={0.2} />
       </SwiperSlide>
       <SwiperSlide>
         <Image src={SouthRegion} alt="" />
         <SlideContent>
-          <SectionTitle>South</SectionTitle>
-          <SectionParagraph>
-            The south region of Brazil is a breathtaking destination that is
-            home to some of the most stunning natural wonders in the world.
-          </SectionParagraph>
-          <Buttonwithicon href="/south">EXPERIENCE THE SOUTH</Buttonwithicon>
-        </SlideContent>
-        <RegionGraphic>
+          <Container>
+            <SectionTitle>South</SectionTitle>
+            <SectionParagraph>
+              The south region of Brazil is a breathtaking destination that is
+              home to some of the most stunning natural wonders in the world.
+            </SectionParagraph>
+            <Buttonwithicon href="/south">EXPERIENCE THE SOUTH</Buttonwithicon>
+          </Container>
           <Image src={SouthMap} alt="" />
-        </RegionGraphic>
+        </SlideContent>
         <BlackFilter opacity={0.2} />
       </SwiperSlide>
     </StyledSwiper>
