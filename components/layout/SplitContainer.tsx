@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import Image from "next/image";
-import SectionParagraph from "./SectionParagraph";
-import SectionTitle from "./SectionTitle";
-import LinkButton from "./LinkButton";
+import Paragraph from "../typography/Paragraph";
+import Title from "../typography/Title";
+import LinkButton from "../buttons/LinkButton";
 
 interface SplitProps {
   src: { src: string; width: number; height: number };
@@ -57,12 +57,12 @@ const SplitContainer = (props: SplitProps) => {
         orientation={props.orientation}
       />
       <SplitContent>
-        <SectionTitle color={props.color} textAlign={props.textAlign}>
+        <Title color={props.color} textAlign={props.textAlign}>
           {props.title}
-        </SectionTitle>
-        <SectionParagraph color={props.color} textAlign={props.textAlign}>
+        </Title>
+        <Paragraph color={props.color} textAlign={props.textAlign}>
           {props.paragraph}
-        </SectionParagraph>
+        </Paragraph>
         <LinkButton href={props.href}>{props.buttonLabel}</LinkButton>
       </SplitContent>
     </Container>

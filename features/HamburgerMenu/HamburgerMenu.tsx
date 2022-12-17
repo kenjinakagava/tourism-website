@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styled from "styled-components";
-import VerticalMenu from "../VerticalMenu/VerticalMenu";
+import VerticalMenu from "@/features/VerticalMenu/VerticalMenu";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 interface HamburgerMenuProps {

@@ -5,17 +5,16 @@ import SoutheastRegion from "../../public/SoutheastRegion.jpg";
 import SouthRegion from "../../public/SouthRegion.jpg";
 import NorthMap from "../../public/NorthMap.png";
 import NortheastMap from "../../public/NortheastMap.png";
-import Container from "@/components/Container";
-import Buttonwithicon from "@/components/Buttonwithicon";
+import Container from "@/components/layout/Container";
+import Buttonwithicon from "@/components/buttons/ArrowButton";
 import CentralWestMap from "../../public/CentralWestMap.png";
 import SoutheastMap from "../../public/SoutheastMap.png";
 import SouthMap from "../../public/SouthMap.png";
 import Image from "next/image";
 import styled from "styled-components";
-import SectionTitle from "@/components/SectionTitle";
-import Link from "next/link";
-import BlackFilter from "@/components/BlackFilter";
-import SectionParagraph from "@/components/SectionParagraph";
+import SectionTitle from "@/components/typography/Title";
+import BlackFilter from "@/components/layout/BlackFilter";
+import Paragraph from "@/components/typography/Paragraph";
 import { Navigation, Pagination, A11y } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -30,10 +29,13 @@ const StyledSwiper = styled(Swiper)`
   .swiper-button-prev {
     color: white;
   }
+  .swiper-pagination-bullet-active {
+    background: white;
+  }
   img {
     object-fit: cover;
     height: 100%;
-    margin-left: auto;
+    margin: 0 auto;
   }
 `;
 
@@ -41,7 +43,7 @@ const SlideContent = styled.div`
   display: flex;
   min-height: 100%;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   position: absolute;
   z-index: 51;
   top: 0;
@@ -50,6 +52,9 @@ const SlideContent = styled.div`
   gap: 1rem;
   * {
     color: white;
+  }
+  @media (min-width: 768px) {
+    justify-content: center;
   }
 `;
 
@@ -69,10 +74,10 @@ const RegionSlider = () => {
         <SlideContent>
           <Container>
             <SectionTitle>North</SectionTitle>
-            <SectionParagraph>
+            <Paragraph>
               The North of Brazil is a region with many beautiful and
               interesting sights to see.
-            </SectionParagraph>
+            </Paragraph>
             <Buttonwithicon href="/north">EXPERIENCE THE NORTH</Buttonwithicon>
           </Container>
           <Image src={NorthMap} alt="" />
@@ -84,10 +89,10 @@ const RegionSlider = () => {
         <SlideContent>
           <Container>
             <SectionTitle>Northeast</SectionTitle>
-            <SectionParagraph>
+            <Paragraph>
               The Northeast Region of Brazil is a stunning and diverse region
               that offers something for everyone.
-            </SectionParagraph>
+            </Paragraph>
             <Buttonwithicon href="/northeast">
               EXPERIENCE THE NORTHEAST
             </Buttonwithicon>
@@ -101,11 +106,11 @@ const RegionSlider = () => {
         <SlideContent>
           <Container>
             <SectionTitle>Central-West</SectionTitle>
-            <SectionParagraph>
+            <Paragraph>
               The Center-West Region of Brazil is a vibrant and dynamic region
               that offers a wide range of attractions and activities for
               visitors.
-            </SectionParagraph>
+            </Paragraph>
             <Buttonwithicon href="/central-west">
               EXPERIENCE THE CENTRAL-WEST
             </Buttonwithicon>
@@ -119,11 +124,11 @@ const RegionSlider = () => {
         <SlideContent>
           <Container>
             <SectionTitle>Southeast</SectionTitle>
-            <SectionParagraph>
+            <Paragraph>
               The southeast region of Brazil is a must-visit destination for
               anyone looking to experience the culture and natural beauty of
               this vibrant country.
-            </SectionParagraph>
+            </Paragraph>
             <Buttonwithicon href="/southeast">
               EXPERIENCE THE SOUTHEAST
             </Buttonwithicon>
@@ -137,10 +142,10 @@ const RegionSlider = () => {
         <SlideContent>
           <Container>
             <SectionTitle>South</SectionTitle>
-            <SectionParagraph>
+            <Paragraph>
               The south region of Brazil is a breathtaking destination that is
               home to some of the most stunning natural wonders in the world.
-            </SectionParagraph>
+            </Paragraph>
             <Buttonwithicon href="/south">EXPERIENCE THE SOUTH</Buttonwithicon>
           </Container>
           <Image src={SouthMap} alt="" />

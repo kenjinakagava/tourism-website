@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import IconBlock from "./IconBlock";
 import {
-  FaSearch,
   FaHeart,
   FaMapMarkedAlt,
   FaQuestion,
@@ -54,12 +53,6 @@ const VerticalMenu = ({ isOpen }: VerticalMenuProps) => {
     <MenuScreen isOpen={isOpen}>
       <MenuWrapper>
         <IconWrapper>
-          <IconBlock
-            title="Search"
-            href="/search"
-            ariaLabel=""
-            icon={<FaSearch />}
-          />
           <IconBlock
             title="Saved"
             href="/saved"

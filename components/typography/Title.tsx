@@ -1,29 +1,28 @@
 import styled from "styled-components";
 
-interface ParagraphProps {
+interface TitleProps {
   children: React.ReactNode;
   textAlign?: "left" | "center" | "right" | string;
   color?: string;
 }
 
-const Paragraph = styled.p<Pick<ParagraphProps, "textAlign" | "color">>`
-  max-width: 45ch;
+const StyledTitle = styled.h2<Pick<TitleProps, "textAlign" | "color">>`
+  font-size: 2.25rem;
+  width: 90%;
   margin-bottom: 1rem;
-  font-size: 1.25rem;
-  font-family: sans-serif;
   color: ${(props) => (props.color ? props.color : "black")};
   text-align: ${(props) => (props.textAlign ? props.textAlign : "left")};
   @media (min-width: 768px) {
-    font-size: 1.75rem;
+    font-size: 3rem;
   }
 `;
 
-const SectionParagraph = ({ children, textAlign, color }: ParagraphProps) => {
+const Title = ({ children, textAlign, color }: TitleProps) => {
   return (
-    <Paragraph textAlign={textAlign} color={color}>
+    <StyledTitle textAlign={textAlign} color={color}>
       {children}
-    </Paragraph>
+    </StyledTitle>
   );
 };
 
-export default SectionParagraph;
+export default Title;

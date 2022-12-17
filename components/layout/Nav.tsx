@@ -1,9 +1,9 @@
 import HamburgerMenu from "features/HamburgerMenu/HamburgerMenu";
 import Link from "next/link";
 import styled from "styled-components";
-import LogoDesktop from "../public/LogoDesktop.svg";
-import LogoMobile from "../public/LogoMobile.svg";
-import { FaSearch, FaHeart } from "react-icons/fa";
+import LogoDesktop from "public/LogoDesktop.svg";
+import LogoMobile from "public/LogoMobile.svg";
+import { FaHeart } from "react-icons/fa";
 
 const Logo = styled.img`
   width: 60px;
@@ -74,11 +74,6 @@ const Nav = () => (
         </li>
       </NavIconLinks>
       <NavIconLinks>
-        <li>
-          <Link href="/search" aria-label="Go to search page">
-            <FaSearch />
-          </Link>
-        </li>
         <li>
           <Link href="/saved" aria-label="Go to saved locations page">
             <FaHeart />

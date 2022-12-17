@@ -1,10 +1,8 @@
 import styled from "styled-components";
-
-import RioDeJaneiroFullHD from "../public/Riodejaneirofullhd.webp";
-import RioDeJaneiroHD from "../public/Riodejaneirohd.webp";
+import RioDeJaneiroFullHD from "public/Riodejaneirofullhd.webp";
+import RioDeJaneiroHD from "public/Riodejaneirohd.webp";
 
 const HeroTagline = styled.h1`
-  //
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -1,11 +1,10 @@
 import Head from "next/head";
-import Header from "../components/Header";
-import Main from "../components/Main";
+import Header from "../components/layout/Header";
 import SectionImg1 from "../public/Sectionimg1.jpg";
 import SectionImg2 from "../public/Sectionimg2.png";
-import SplitContainer from "@/components/SplitContainer";
-import CenteredSection from "@/components/CenteredSection";
-import FullSection from "@/components/FullSection";
+import SplitContainer from "../components/layout/SplitContainer";
+import ContainedSection from "@/components/layout/ContainedSection";
+import FullSection from "@/components/layout/FullSection";
 import RegionSlider from "features/RegionSlider/RegionSlider";
 export default function Home() {
   return (
@@ -28,8 +27,8 @@ export default function Home() {
         />
       </Head>
       <Header isHero={true} />
-      <Main>
-        <CenteredSection>
+      <main>
+        <ContainedSection>
           <SplitContainer
             src={SectionImg1}
             alt={"a"}
@@ -49,13 +48,13 @@ export default function Home() {
             buttonLabel="EXPLORE"
             title="EXPLORE BRAZIL'S NATURAL WONDERS."
             orientation="left"
-            paragraph="Brazil is a country rich in natural beauty, from the Amazon rainforest to the beaches of Rio de Janeiro. One of its most famous attractions is the Iguazu Falls, a series of over 275 waterfalls on the border between Brazil and Argentina. These falls are a must-see for anyone interested in experiencing Brazil's stunning flora and landscapes."
+            paragraph="Brazil is a country rich in natural beauty, one of its most famous attractions is the Iguazu Falls, a series of over 275 waterfalls on the border between Brazil and Argentina. These falls are a must-see for anyone interested in experiencing Brazil's stunning flora and landscapes."
           />
-        </CenteredSection>
+        </ContainedSection>
         <FullSection>
           <RegionSlider />
         </FullSection>
-      </Main>
+      </main>
     </div>
   );
 }
