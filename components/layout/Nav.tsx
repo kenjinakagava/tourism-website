@@ -4,15 +4,7 @@ import styled from "styled-components";
 import LogoDesktop from "public/LogoDesktop.svg";
 import LogoMobile from "public/LogoMobile.svg";
 import { FaHeart } from "react-icons/fa";
-
-const Logo = styled.img`
-  width: 60px;
-  height: 60px;
-  filter: drop-shadow(0px 1px 1px #333);
-  @media (min-width: 900px) {
-    width: 125px;
-  }
-`;
+import Logo from "./Logo";
 
 const NavWrapper = styled.nav`
   width: 100%;
@@ -33,7 +25,6 @@ const NavIconLinks = styled.ul`
     display: flex;
     gap: 1rem;
     align-items: center;
-    // Using this selector because I was having a problem when using a styled component to fill the search icon
   }
   svg {
     width: 24px;
@@ -50,12 +41,7 @@ const NavIconLinks = styled.ul`
 const Nav = () => (
   <NavWrapper>
     <NavContentWrapper>
-      <Link href="/" aria-label="Go to home page">
-        <picture>
-          <source srcSet={LogoDesktop.src} media="(min-width: 900px)" />
-          <Logo src={LogoMobile.src} alt="" />
-        </picture>
-      </Link>
+      <Logo />
       <NavIconLinks>
         <li>
           <Link href="/destinations">Destinations</Link>

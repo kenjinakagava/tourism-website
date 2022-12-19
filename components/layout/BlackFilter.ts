@@ -12,7 +12,7 @@ const BlackFilter = styled.div<BlackFilterProps>`
   width: 100%;
   height: 100%;
   background: ${(props) =>
-    props.opacity ? `rgb(0,0,0,${props.opacity})` : `rgb(0,0,0,0.5)`};
+    props.opacity ? `rgb(0,0,0,${props.opacity})` : `rgb(0,0,0,0.2)`};
 `;
 
 export default BlackFilter;

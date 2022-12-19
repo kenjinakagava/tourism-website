@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import RioDeJaneiroFullHD from "public/Riodejaneirofullhd.webp";
-import RioDeJaneiroHD from "public/Riodejaneirohd.webp";
+import HomeHeroFHD from "public/HomeHeroFHD.webp";
+import HomeHeroHD from "public/HomeHeroHD.webp";
 
 const HeroTagline = styled.h1`
   display: flex;
@@ -40,9 +40,9 @@ const HeroHeader = () => {
   return (
     <>
       <HeroBanner
-        src={RioDeJaneiroFullHD.src}
+        src={HomeHeroHD.src}
         alt=""
-        srcSet={`${RioDeJaneiroHD.src} 840w, ${RioDeJaneiroFullHD.src} 1080w`}
+        srcSet={`${HomeHeroHD.src} 840w, ${HomeHeroFHD.src} 1080w`}
         width="1080"
         height="720"
       />

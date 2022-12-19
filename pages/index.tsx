@@ -6,6 +6,7 @@ import SplitContainer from "../components/layout/SplitContainer";
 import ContainedSection from "@/components/layout/ContainedSection";
 import FullSection from "@/components/layout/FullSection";
 import RegionSlider from "features/RegionSlider/RegionSlider";
+import Footer from "@/components/layout/Footer";
 export default function Home() {
   return (
     <div>
@@ -55,6 +56,7 @@ export default function Home() {
           <RegionSlider />
         </FullSection>
       </main>
+      <Footer />
     </div>
   );
 }

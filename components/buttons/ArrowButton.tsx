@@ -2,12 +2,14 @@ import styled from "styled-components";
 import Link from "next/link";
 import { FiArrowRight } from "react-icons/fi";
 
-interface ButtonProps {
+interface Props {
   children: React.ReactNode;
   href: string;
+  backgroundColor?: string;
+  color?: string;
 }
 
-const ButtonLink = styled(Link)`
+const ButtonLink = styled(Link)<Pick<Props, "backgroundColor" | "color">>`
   padding: 1rem;
   display: inline-flex;
   align-items: center;
@@ -18,7 +20,9 @@ const ButtonLink = styled(Link)`
   border-radius: 8px;
   font-size: 1rem;
   font-weight: 700;
-  background: black;
+  color: ${(props) => (props.color ? props.color : "white")};
+  background: ${(props) =>
+    props.backgroundColor ? props.backgroundColor : "black"};
   width: fit-content;
   svg {
     width: 24px;
@@ -30,9 +34,9 @@ const ButtonLink = styled(Link)`
 `;
 
 // temp name
-const Buttonwithicon = ({ children, href }: ButtonProps) => {
+const Buttonwithicon = ({ children, href, color, backgroundColor }: Props) => {
   return (
-    <ButtonLink href={href}>
+    <ButtonLink color={color} backgroundColor={backgroundColor} href={href}>
       {children}
       <FiArrowRight />
     </ButtonLink>

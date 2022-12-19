@@ -43,7 +43,7 @@ const IconWrapper = styled.ul`
 
 const VerticalMenu = ({ isOpen }: VerticalMenuProps) => {
   // this line is required to access the document without facing a problem when starting the site
-  // this is because document isn't defined in Nodejs, only in the browser, where window is available
+  // this is because document isn't defined in Nodejs, only in the browser, where window is defined
   if (typeof window !== "undefined") {
     isOpen
       ? (document.body.style.overflow = "hidden")
@@ -60,11 +60,11 @@ const VerticalMenu = ({ isOpen }: VerticalMenuProps) => {
             icon={<FaHeart />}
           />
           <IconBlock
-            title="Destinations"
-            href="/destinations"
+            title="Regions"
+            href="/regions"
             ariaLabel=""
             size="large"
-            icon={<FaMapMarkedAlt />}
+            icon={<GiSouthAmerica />}
           />
           <IconBlock
             title="Experiences"
@@ -74,18 +74,11 @@ const VerticalMenu = ({ isOpen }: VerticalMenuProps) => {
             icon={<IoFootstepsSharp />}
           />
           <IconBlock
-            title="Travel Information"
-            href="/travel-information"
+            title="Destinations"
+            href="/destinations"
             ariaLabel=""
             size="large"
-            icon={<FaQuestion />}
-          />
-          <IconBlock
-            title="Regions"
-            href="/regions"
-            ariaLabel=""
-            size="large"
-            icon={<GiSouthAmerica />}
+            icon={<FaMapMarkedAlt />}
           />
           <IconBlock
             title="Special Visa"
@@ -93,6 +86,13 @@ const VerticalMenu = ({ isOpen }: VerticalMenuProps) => {
             ariaLabel=""
             size="large"
             icon={<FaPassport />}
+          />
+          <IconBlock
+            title="Travel Information"
+            href="/travel-information"
+            ariaLabel=""
+            size="large"
+            icon={<FaQuestion />}
           />
         </IconWrapper>
       </MenuWrapper>
