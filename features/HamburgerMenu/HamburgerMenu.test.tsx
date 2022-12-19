@@ -7,8 +7,8 @@ describe(HamburgerMenu, () => {
     const MenuButton = screen.getByRole("button");
 
     fireEvent.click(MenuButton);
-    await screen.findByTestId("close");
+    await screen.findByTestId("hamburgermenu-close");
     fireEvent.click(MenuButton);
-    await screen.findByTestId("open");
+    await screen.findByTestId("hamburgermenu-open");
   });
 });

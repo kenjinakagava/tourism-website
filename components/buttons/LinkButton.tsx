@@ -21,7 +21,7 @@ const StyledLink = styled(Link)`
   :hover {
     transform: translateY(-2px);
   }
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
     width: auto;
     text-align: left;
   }

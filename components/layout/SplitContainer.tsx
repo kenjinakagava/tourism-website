@@ -24,7 +24,7 @@ const Container = styled.div`
   @media (min-width: 768px) {
     align-items: center;
   }
-  @media (min-width: 1440px) {
+  @media (min-width: 1200px) {
     align-items: unset;
     flex-direction: row;
     justify-content: space-around;
@@ -38,7 +38,7 @@ const SplitImage = styled(Image)<
   border-radius: 4px;
   width: 100%;
   max-width: 600px;
-  @media (min-width: 1440px) {
+  @media (min-width: 1200px) {
     width: 50%;
     order: ${(props) => `${props.orientation === "left" ? 1 : 2}`};
   }
@@ -46,7 +46,7 @@ const SplitImage = styled(Image)<
 
 const SplitContent = styled.div<Pick<SplitProps, "orientation">>`
   margin-bottom: 1rem;
-  @media (min-width: 1440px) {
+  @media (min-width: 1200px) {
     width: 50%;
     order: ${(props) => `${props.orientation === "left" ? 2 : 1}`};
   }

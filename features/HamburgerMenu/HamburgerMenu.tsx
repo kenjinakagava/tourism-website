@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styled from "styled-components";
-import VerticalMenu from "@/features/VerticalMenu/VerticalMenu";
+import VerticalMenu from "./VerticalMenu";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 interface HamburgerMenuProps {
@@ -34,13 +34,12 @@ const HamburgerMenu = () => {
   return (
     <>
       <Hamburger isOpen={isOpen} aria-label="Open menu" onClick={toggleMenu}>
-        {isOpen === true ? <FaTimes /> : <FaBars />}
+        {isOpen === true ? (
+          <FaTimes data-testid="hamburgermenu-close" />
+        ) : (
+          <FaBars data-testid="hamburgermenu-open" />
+        )}
       </Hamburger>
-      {/* 
-        this isn't in the conditional "isOpen ? <VerticalMenu isOpen={isOpen}/>"
-        because that would break the transition, my guess is that it happens
-        because the component is being rendered in an already open state.
-        */}
       <VerticalMenu isOpen={isOpen} />
     </>
   );
