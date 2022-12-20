@@ -56,41 +56,41 @@ const VerticalMenu = ({ isOpen }: VerticalMenuProps) => {
           <IconBlock
             title="Saved"
             href="/saved"
-            ariaLabel=""
+            ariaLabel="View saved locations"
             icon={<FaHeart />}
           />
           <IconBlock
             title="Regions"
             href="/regions"
-            ariaLabel=""
+            ariaLabel="View our Regions"
             size="large"
             icon={<GiSouthAmerica />}
           />
           <IconBlock
             title="Experiences"
             href="/experiences"
-            ariaLabel=""
+            ariaLabel="Discover experiences in Brazil"
             size="large"
             icon={<IoFootstepsSharp />}
           />
           <IconBlock
             title="Destinations"
             href="/destinations"
-            ariaLabel=""
+            ariaLabel="Explore destinations in Brazil"
             size="large"
             icon={<FaMapMarkedAlt />}
           />
           <IconBlock
             title="Special Visa"
             href="/special-visa"
-            ariaLabel=""
+            ariaLabel="Learn about special visas"
             size="large"
             icon={<FaPassport />}
           />
           <IconBlock
             title="Travel Information"
             href="/travel-information"
-            ariaLabel=""
+            ariaLabel="Get travel information for Brazil"
             size="large"
             icon={<FaQuestion />}
           />

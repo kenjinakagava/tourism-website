@@ -1,5 +1,5 @@
 import IconBlock from "./IconBlock";
-import { fireEvent, render, screen, waitFor } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 
 describe(IconBlock, () => {
   it("Icon block redirects correctly", async () => {

@@ -7,6 +7,7 @@ import ContainedSection from "@/components/layout/ContainedSection";
 import FullSection from "@/components/layout/FullSection";
 import RegionSlider from "features/RegionSlider/RegionSlider";
 import Footer from "@/components/layout/Footer";
+import VerticalMenu from "@/features/HamburgerMenu/VerticalMenu";
 export default function Home() {
   return (
     <div>
@@ -55,6 +56,7 @@ export default function Home() {
         <FullSection>
           <RegionSlider />
         </FullSection>
+        <VerticalMenu isOpen={false}></VerticalMenu>
       </main>
       <Footer />
     </div>
