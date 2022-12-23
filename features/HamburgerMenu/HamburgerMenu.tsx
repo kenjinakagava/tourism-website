@@ -5,6 +5,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 
 interface HamburgerMenuProps {
   isOpen: boolean;
+  isHero?: boolean;
 }
 
 const Hamburger = styled.button<HamburgerMenuProps>`

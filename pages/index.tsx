@@ -5,12 +5,13 @@ import SectionImg2 from "../public/Sectionimg2.png";
 import SplitContainer from "../components/layout/SplitContainer";
 import ContainedSection from "@/components/layout/ContainedSection";
 import FullSection from "@/components/layout/FullSection";
-import RegionSlider from "features/RegionSlider/RegionSlider";
+import RegionSlider from "@/features/HomeSlider/HomeSlider";
 import Footer from "@/components/layout/Footer";
 import VerticalMenu from "@/features/HamburgerMenu/VerticalMenu";
+
 export default function Home() {
   return (
-    <div>
+    <>
       <Head>
         <title>Tourism Brazil</title>
         <meta
@@ -59,6 +60,6 @@ export default function Home() {
         <VerticalMenu isOpen={false}></VerticalMenu>
       </main>
       <Footer />
-    </div>
+    </>
   );
 }

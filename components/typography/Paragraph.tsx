@@ -6,7 +6,7 @@ interface ParagraphProps {
   color?: string;
 }
 
-const StyledParagraph = styled.p<Pick<ParagraphProps, "textAlign" | "color">>`
+const Paragraph = styled.p<Pick<ParagraphProps, "textAlign" | "color">>`
   max-width: 55ch;
   margin-bottom: 1rem;
   font-size: 1.25rem;
@@ -17,13 +17,5 @@ const StyledParagraph = styled.p<Pick<ParagraphProps, "textAlign" | "color">>`
     font-size: 1.75rem;
   }
 `;
-
-const Paragraph = ({ children, textAlign, color }: ParagraphProps) => {
-  return (
-    <StyledParagraph textAlign={textAlign} color={color}>
-      {children}
-    </StyledParagraph>
-  );
-};
 
 export default Paragraph;

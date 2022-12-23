@@ -18,7 +18,8 @@
     "paths": {
       "@/components/*": ["components/*"],
       "@/features/*": ["features/*"],
-      "@/public/*": ["public/*"]
+      "@/public/*": ["public/*"],
+      "@/data/*": ["data/*"]
     }
   },
   "include": [

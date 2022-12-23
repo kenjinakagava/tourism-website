@@ -9,7 +9,7 @@ interface TitleProps {
   fontSizeMobile?: string;
 }
 
-const StyledTitle = styled.h2<
+const Title = styled.h2<
   Pick<TitleProps, "textAlign" | "color" | "fontSize" | "fontSizeMobile">
 >`
   font-size: ${(props) => (props.fontSize ? props.fontSize : "2.25rem")};
@@ -21,27 +21,5 @@ const StyledTitle = styled.h2<
       props.fontSizeMobile ? props.fontSizeMobile : "3rem"};
   }
 `;
-
-const Title = ({
-  children,
-  textAlign,
-  color,
-  heading,
-  fontSize,
-  fontSizeMobile,
-}: TitleProps) => {
-  const headingLevel = heading === undefined ? 2 : heading;
-  return (
-    <StyledTitle
-      textAlign={textAlign}
-      color={color}
-      as={`h${headingLevel}`}
-      fontSize={fontSize}
-      fontSizeMobile={fontSizeMobile}
-    >
-      {children}
-    </StyledTitle>
-  );
-};
 
 export default Title;
