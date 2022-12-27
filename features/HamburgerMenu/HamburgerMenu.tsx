@@ -18,7 +18,7 @@ const Hamburger = styled.button<HamburgerMenuProps>`
     fill: ${(props) => (props.isOpen === true ? "black" : "white")};
     filter: drop-shadow(0px 1px 1px #333);
   }
-  @media (min-width: 768px) {
+  @media (min-width: 900px) {
     display: none;
   }
 `;

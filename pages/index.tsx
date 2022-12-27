@@ -31,7 +31,7 @@ export default function Home() {
       </Head>
       <Header isHero={true} />
       <main>
-        <ContainedSection>
+        <ContainedSection backgroundColor="white">
           <SplitContainer
             src={SectionImg1}
             alt={"a"}

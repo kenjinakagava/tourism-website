@@ -10,7 +10,7 @@ const Header = ({ isHero, banner }: HeaderProps) => {
     <header>
       <Nav isHero={isHero} />
       {isHero === true ? <HeroHeader /> : null}
-      {banner === true ? banner : null}
+      {banner ? banner : null}
     </header>
   );
 };

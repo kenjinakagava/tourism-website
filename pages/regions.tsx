@@ -2,9 +2,7 @@ import Footer from "@/components/layout/Footer";
 import styled from "styled-components";
 import StyledTitle from "@/components/typography/Title";
 import Header from "@/components/layout/Header";
-import ContainedSection from "@/components/layout/ContainedSection";
 import FullSection from "@/components/layout/FullSection";
-import Container from "@/components/layout/Container";
 import Paragraph from "@/components/typography/Paragraph";
 import {
   NorthRegionSlider,
@@ -14,21 +12,22 @@ import {
   SouthRegionSlider,
 } from "@/features/RegionsSlider/regions";
 
-const Main = styled.main`
-  background-color: #f1f5f9;
-`;
-
 const RegionsTitle = styled(StyledTitle)`
   padding-top: 1rem;
+`;
+
+const RegionsContainer = styled.div`
+  padding: 5rem 0;
+  margin-left: 2rem;
 `;
 
 const Regions = () => {
   return (
     <>
       <Header isHero={false} />
-      <Main>
-        <FullSection padding="3.25rem 0 0" margin="3rem 0 0">
-          <Container>
+      <main>
+        <FullSection>
+          <RegionsContainer>
             <RegionsTitle>North</RegionsTitle>
             <Paragraph>
               The north of Brazil is a region with a rich history and culture,
@@ -36,11 +35,11 @@ const Regions = () => {
               and exciting place. The north is home to stunning beaches,
               beautiful landscapes, and vibrant cities.
             </Paragraph>
-          </Container>
+          </RegionsContainer>
           <NorthRegionSlider />
         </FullSection>
         <FullSection>
-          <Container>
+          <RegionsContainer>
             <RegionsTitle>Northeast</RegionsTitle>
             <Paragraph>
               The northeast of Brazil is a great destination for anyone looking
@@ -48,22 +47,22 @@ const Regions = () => {
               home to a variety of cultural attractions, including historic
               cities and lively festivals.
             </Paragraph>
-          </Container>
+          </RegionsContainer>
           <NortheastRegionSlider />
         </FullSection>
         <FullSection>
-          <Container>
+          <RegionsContainer>
             <RegionsTitle>Midwest</RegionsTitle>
             <Paragraph>
               The Midwest is home to a variety of landscapes, including the
               Pantanal, the world's largest wetland, which is home to a diverse
               array of flora and fauna.
             </Paragraph>
-          </Container>
+          </RegionsContainer>
           <MidwestRegionSlider />
         </FullSection>
         <FullSection>
-          <Container>
+          <RegionsContainer>
             <RegionsTitle>Southeast</RegionsTitle>
             <Paragraph>
               The Southeast of Brazil is home to some of the country's most
@@ -71,11 +70,11 @@ const Regions = () => {
               known for their stunning beaches, vibrant nightlife, and cultural
               attractions.
             </Paragraph>
-          </Container>
+          </RegionsContainer>
           <SoutheastRegionSlider />
         </FullSection>
-        <FullSection padding="0 0 6.25rem">
-          <Container>
+        <FullSection>
+          <RegionsContainer>
             <RegionsTitle>South</RegionsTitle>
             <Paragraph>
               The South of Brazil is home to some of the country's most stunning
@@ -83,10 +82,10 @@ const Regions = () => {
               Atlantic Forest, which is home to a diverse array of flora and
               fauna.
             </Paragraph>
-          </Container>
+          </RegionsContainer>
           <SouthRegionSlider />
         </FullSection>
-      </Main>
+      </main>
       <Footer />
     </>
   );
