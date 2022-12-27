@@ -7,6 +7,7 @@ import Title from "@/components/typography/Title";
 import BannerExperiences from "@/components/banners/BannerExperiences";
 import ExperienceCards from "@/features/Cards/ExperienceCards";
 import DestinationCards from "@/features/Cards/DestinationCards";
+import Layout from "@/components/layout/Layout";
 
 const ContentContainer = styled(Container)`
   display: flex;
@@ -36,20 +37,23 @@ const ExperiencesSection = styled(FullSection)`
 const ExperiencesAndDestinations = () => {
   return (
     <>
-      <Header banner={<BannerExperiences />} />
-      <ExperiencesSection id="experiences">
-        <Title textAlign="center">Experiences</Title>
-        <ContentContainer>
-          <ExperienceCards />
-        </ContentContainer>
-      </ExperiencesSection>
-      <FullSection id="destinations" padding="3rem 0 0">
-        <Title textAlign="center">Destinations</Title>
-        <ContentContainer>
-          <DestinationCards />
-        </ContentContainer>
-      </FullSection>
-      <Footer />
+      <Layout
+        title="Experiences and Destinations"
+        description="Brazil is a country full of adventure and excitement, experience the thrill of Brazil's diverse culture, vibrant cities, and breathtaking natural beauty"
+      >
+        <ExperiencesSection id="experiences">
+          <Title textAlign="center">Experiences</Title>
+          <ContentContainer>
+            <ExperienceCards />
+          </ContentContainer>
+        </ExperiencesSection>
+        <FullSection id="destinations" padding="3rem 0 0">
+          <Title textAlign="center">Destinations</Title>
+          <ContentContainer>
+            <DestinationCards />
+          </ContentContainer>
+        </FullSection>
+      </Layout>
     </>
   );
 };

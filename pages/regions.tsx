@@ -1,7 +1,5 @@
-import Footer from "@/components/layout/Footer";
 import styled from "styled-components";
 import StyledTitle from "@/components/typography/Title";
-import Header from "@/components/layout/Header";
 import FullSection from "@/components/layout/FullSection";
 import Paragraph from "@/components/typography/Paragraph";
 import {
@@ -11,6 +9,7 @@ import {
   SoutheastRegionSlider,
   SouthRegionSlider,
 } from "@/features/RegionsSlider/regions";
+import Layout from "@/components/layout/Layout";
 
 const RegionsTitle = styled(StyledTitle)`
   padding-top: 1rem;
@@ -24,8 +23,10 @@ const RegionsContainer = styled.div`
 const Regions = () => {
   return (
     <>
-      <Header isHero={false} />
-      <main>
+      <Layout
+        title="Regions"
+        description="Explore the diverse regions of Brazil, each with its own unique culture, landscapes, and attractions, in Brazil there's always something for everyone."
+      >
         <FullSection>
           <RegionsContainer>
             <RegionsTitle>North</RegionsTitle>
@@ -85,8 +86,7 @@ const Regions = () => {
           </RegionsContainer>
           <SouthRegionSlider />
         </FullSection>
-      </main>
-      <Footer />
+      </Layout>
     </>
   );
 };

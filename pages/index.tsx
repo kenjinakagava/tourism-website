@@ -1,36 +1,20 @@
-import Head from "next/head";
-import Header from "../components/layout/Header";
 import SectionImg1 from "../public/Sectionimg1.jpg";
 import SectionImg2 from "../public/Sectionimg2.png";
 import SplitContainer from "../components/layout/SplitContainer";
 import ContainedSection from "@/components/layout/ContainedSection";
 import FullSection from "@/components/layout/FullSection";
 import RegionSlider from "@/features/HomeSlider/HomeSlider";
-import Footer from "@/components/layout/Footer";
 import VerticalMenu from "@/features/HamburgerMenu/VerticalMenu";
+import Layout from "@/components/layout/Layout";
 
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Tourism Brazil</title>
-        <meta
-          name="description"
-          content="Explore the beauty and culture of our city with our award-winning tours. From historic landmarks to hidden gems, we have something for everyone. Book your adventure today and experience the best of our destination."
-        />
-        <link
-          rel="icon"
-          href="/FaviconDark.ico"
-          media="(prefers-color-scheme: light)"
-        />
-        <link
-          rel="icon"
-          href="/FaviconLight.ico"
-          media="(prefers-color-scheme: dark)"
-        />
-      </Head>
-      <Header isHero={true} />
-      <main>
+      <Layout
+        title="Tourism Brazil"
+        description="Come and experience the magic of Brazil! With its stunning beaches, vibrant culture, and exciting cities, Brazil is the perfect destination for your next vacation."
+        isHero={true}
+      >
         <ContainedSection backgroundColor="white">
           <SplitContainer
             src={SectionImg1}
@@ -38,11 +22,7 @@ export default function Home() {
             href="/"
             buttonLabel="DISCOVER"
             title="DISCOVER THE BEAUTY OF BRAZIL"
-            paragraph="Come and experience the magic of Brazil! With its stunning
-              beaches, vibrant culture, and exciting cities, Brazil is the
-              perfect destination for your next vacation. From the Amazon
-              rainforest to the bustling streets of Rio de Janeiro, Brazil
-              offers a wide range of experiences for every type of traveler."
+            paragraph="Come and experience the magic of Brazil! With its stunning beaches, vibrant culture, and exciting cities, Brazil is the perfect destination for your next vacation. From the Amazon rainforest to the bustling streets of Rio de Janeiro, Brazil offers a wide range of experiences for every type of traveler."
           />
           <SplitContainer
             src={SectionImg2}
@@ -57,9 +37,8 @@ export default function Home() {
         <FullSection>
           <RegionSlider />
         </FullSection>
-        <VerticalMenu isOpen={false}></VerticalMenu>
-      </main>
-      <Footer />
+        <VerticalMenu isOpen={false} />
+      </Layout>
     </>
   );
 }
