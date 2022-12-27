@@ -8,7 +8,7 @@ import SaveButton from "@/features/Saved/SaveButton";
 interface CardProps {
   src: StaticImageData;
   title: string;
-  paragraph: string;
+  paragraph?: string;
 }
 
 const CardContainer = styled.div`
@@ -58,9 +58,11 @@ const Card = ({ src, title, paragraph }: CardProps) => {
         <Title fontSizeMobile="1.25rem" fontSize="1.5rem" as={"h3"}>
           {title}
         </Title>
-        <Paragraph fontSizeMobile="1rem" fontSize="1rem">
-          {paragraph}
-        </Paragraph>
+        {paragraph ? (
+          <Paragraph fontSizeMobile="1rem" fontSize="1rem">
+            {paragraph}
+          </Paragraph>
+        ) : null}
       </CardContentContainer>
       <Wrapper>
         <SaveButton />

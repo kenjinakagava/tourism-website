@@ -68,14 +68,14 @@ const VerticalMenu = ({ isOpen }: VerticalMenuProps) => {
           />
           <IconBlock
             title="Experiences"
-            href="/experiences-and-destinations"
+            href="/experiences-and-destinations#experiences"
             ariaLabel="Discover experiences in Brazil"
             size="large"
             icon={<IoFootstepsSharp />}
           />
           <IconBlock
             title="Destinations"
-            href="/experiences-and-destinations"
+            href="/experiences-and-destinations#destinations"
             ariaLabel="Explore destinations in Brazil"
             size="large"
             icon={<FaMapMarkedAlt />}

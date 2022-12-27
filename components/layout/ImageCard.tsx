@@ -1,20 +1,19 @@
+import { StaticImageData } from "next/image";
 import styled from "styled-components";
 import Title from "../typography/Title";
-
+import Image from "next/image";
 interface ImageCardProps {
-  src: string;
+  src: StaticImageData;
   title: string;
+  isLarge?: boolean;
 }
 
-const CardWrapper = styled.div<Pick<ImageCardProps, "src">>`
-  margin-top: 1rem;
-  margin-left: 1rem;
-  background: ${(props) => (props.src ? props.src : "")};
-`;
+const CardWrapper = styled.div``;
 
 const ImageCard = ({ src, title }: ImageCardProps) => {
   return (
-    <CardWrapper src={src}>
+    <CardWrapper>
+      <Image src={src} alt=""></Image>
       <Title as={"h3"}>{title}</Title>
     </CardWrapper>
   );

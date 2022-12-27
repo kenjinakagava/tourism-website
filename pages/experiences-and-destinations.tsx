@@ -6,8 +6,9 @@ import Container from "@/components/layout/Container";
 import Title from "@/components/typography/Title";
 import BannerExperiences from "@/components/banners/BannerExperiences";
 import ExperienceCards from "@/features/Cards/ExperienceCards";
+import DestinationCards from "@/features/Cards/DestinationCards";
 
-const ExperiencesContainer = styled(Container)`
+const ContentContainer = styled(Container)`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,24 +33,21 @@ const ExperiencesSection = styled(FullSection)`
   }
 `;
 
-const DestinationsSection = styled(FullSection)`
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
-`;
-
 const ExperiencesAndDestinations = () => {
   return (
     <>
       <Header banner={<BannerExperiences />} />
       <ExperiencesSection id="experiences">
         <Title textAlign="center">Experiences</Title>
-        <ExperiencesContainer>
+        <ContentContainer>
           <ExperienceCards />
-        </ExperiencesContainer>
+        </ContentContainer>
       </ExperiencesSection>
       <FullSection id="destinations" padding="3rem 0 0">
         <Title textAlign="center">Destinations</Title>
-        <DestinationsSection></DestinationsSection>
+        <ContentContainer>
+          <DestinationCards />
+        </ContentContainer>
       </FullSection>
       <Footer />
     </>
