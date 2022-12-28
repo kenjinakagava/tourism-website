@@ -22,6 +22,9 @@ const MenuScreen = styled.div<VerticalMenuProps>`
   transition: 0.2s ease;
   transform: ${(props) =>
     props.isOpen === true ? "translateY(0)" : "translateY(-150%)"};
+  @media (min-width: 900px) {
+    display: none;
+  }
 `;
 
 const MenuWrapper = styled.div`
@@ -52,49 +55,51 @@ const VerticalMenu = ({ isOpen }: VerticalMenuProps) => {
   return (
     <MenuScreen isOpen={isOpen}>
       <MenuWrapper>
-        <IconWrapper>
-          <IconBlock
-            title="Saved"
-            href="/saved"
-            ariaLabel="View saved locations"
-            icon={<FaHeart />}
-          />
-          <IconBlock
-            title="Regions"
-            href="/regions"
-            ariaLabel="View our Regions"
-            size="large"
-            icon={<GiSouthAmerica />}
-          />
-          <IconBlock
-            title="Experiences"
-            href="/experiences-and-destinations#experiences"
-            ariaLabel="Discover experiences in Brazil"
-            size="large"
-            icon={<IoFootstepsSharp />}
-          />
-          <IconBlock
-            title="Destinations"
-            href="/experiences-and-destinations#destinations"
-            ariaLabel="Explore destinations in Brazil"
-            size="large"
-            icon={<FaMapMarkedAlt />}
-          />
-          <IconBlock
-            title="Special Visa"
-            href="/special-visa"
-            ariaLabel="Learn about special visas"
-            size="large"
-            icon={<FaPassport />}
-          />
-          <IconBlock
-            title="Travel Information"
-            href="/travel-information"
-            ariaLabel="Get travel information for Brazil"
-            size="large"
-            icon={<FaQuestion />}
-          />
-        </IconWrapper>
+        {isOpen === true ? (
+          <IconWrapper>
+            <IconBlock
+              title="Saved"
+              href="/saved"
+              ariaLabel="View saved locations"
+              icon={<FaHeart />}
+            />
+            <IconBlock
+              title="Regions"
+              href="/regions"
+              ariaLabel="View our Regions"
+              size="large"
+              icon={<GiSouthAmerica />}
+            />
+            <IconBlock
+              title="Experiences"
+              href="/experiences-and-destinations#experiences"
+              ariaLabel="Discover experiences in Brazil"
+              size="large"
+              icon={<IoFootstepsSharp />}
+            />
+            <IconBlock
+              title="Destinations"
+              href="/experiences-and-destinations#destinations"
+              ariaLabel="Explore destinations in Brazil"
+              size="large"
+              icon={<FaMapMarkedAlt />}
+            />
+            <IconBlock
+              title="Special Visa"
+              href="/special-visa"
+              ariaLabel="Learn about special visas"
+              size="large"
+              icon={<FaPassport />}
+            />
+            <IconBlock
+              title="Travel Information"
+              href="/travel-information"
+              ariaLabel="Get travel information for Brazil"
+              size="large"
+              icon={<FaQuestion />}
+            />
+          </IconWrapper>
+        ) : null}
       </MenuWrapper>
     </MenuScreen>
   );
