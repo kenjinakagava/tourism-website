@@ -45,13 +45,6 @@ const IconWrapper = styled.ul`
 `;
 
 const VerticalMenu = ({ isOpen }: VerticalMenuProps) => {
-  // this line is required to access the document without facing a problem when starting the site
-  // this is because document isn't defined in Nodejs, only in the browser, where window is defined
-  if (typeof window !== "undefined") {
-    isOpen
-      ? (document.body.style.overflow = "hidden")
-      : (document.body.style.overflow = "auto");
-  }
   return (
     <MenuScreen isOpen={isOpen}>
       <MenuWrapper>

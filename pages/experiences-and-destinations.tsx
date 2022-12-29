@@ -1,5 +1,3 @@
-import Header from "@/components/layout/Header";
-import Footer from "@/components/layout/Footer";
 import FullSection from "@/components/layout/FullSection";
 import styled from "styled-components";
 import Container from "@/components/layout/Container";
@@ -40,6 +38,7 @@ const ExperiencesAndDestinations = () => {
       <Layout
         title="Experiences and Destinations"
         description="Brazil is a country full of adventure and excitement, experience the thrill of Brazil's diverse culture, vibrant cities, and breathtaking natural beauty"
+        banner={<BannerExperiences />}
       >
         <ExperiencesSection id="experiences">
           <Title textAlign="center">Experiences</Title>
@@ -47,7 +46,7 @@ const ExperiencesAndDestinations = () => {
             <ExperienceCards />
           </ContentContainer>
         </ExperiencesSection>
-        <FullSection id="destinations" padding="3rem 0 0">
+        <FullSection id="destinations" padding="3rem 0 3rem">
           <Title textAlign="center">Destinations</Title>
           <ContentContainer>
             <DestinationCards />

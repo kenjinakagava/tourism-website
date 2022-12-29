@@ -1,9 +1,9 @@
 import Banner from "./Banner";
-import Illustration from "@/public/IllustrationWalk.svg";
+import Illustration from "@/public/ExperiencesIllustration.svg";
 
 const BannerExperiences = () => {
   return (
-    <Banner title="EXPERIENCE BRAZIL" isH1={true} illustration={Illustration} />
+    <Banner title="Experience Brazil" isH1={true} illustration={Illustration} />
   );
 };
 

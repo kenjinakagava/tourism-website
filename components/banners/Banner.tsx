@@ -17,6 +17,8 @@ const BannerContainer = styled.div`
     align-items: center;
     img {
       margin-left: auto;
+      overflow: auto;
+      max-height: 300px;
     }
   }
 `;

@@ -6,16 +6,20 @@ interface TitleProps {
   color?: string;
   fontSize?: string;
   fontSizeMobile?: string;
+  margin?: string;
 }
 
 const Title = styled.h2<
-  Pick<TitleProps, "textAlign" | "color" | "fontSize" | "fontSizeMobile">
+  Pick<
+    TitleProps,
+    "textAlign" | "color" | "fontSize" | "fontSizeMobile" | "margin"
+  >
 >`
   font-size: ${(props) =>
     props.fontSizeMobile ? props.fontSizeMobile : "2.25rem"};
-  margin-bottom: 1rem;
   color: ${(props) => (props.color ? props.color : "black")};
   text-align: ${(props) => (props.textAlign ? props.textAlign : "left")};
+  margin: ${(props) => (props.margin ? props.margin : "0 0 1rem")};
   @media (min-width: 768px) {
     font-size: ${(props) => (props.fontSize ? props.fontSize : "3rem")};
   }

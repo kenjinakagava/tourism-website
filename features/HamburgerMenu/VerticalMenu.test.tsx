@@ -4,8 +4,14 @@ import VerticalMenu from "./VerticalMenu";
 const links = [
   { label: "View saved locations", href: "/saved" },
   { label: "View our Regions", href: "/regions" },
-  { label: "Discover experiences in Brazil", href: "/experiences" },
-  { label: "Explore destinations in Brazil", href: "/destinations" },
+  {
+    label: "Discover experiences in Brazil",
+    href: "/experiences-and-destinations#experiences",
+  },
+  {
+    label: "Explore destinations in Brazil",
+    href: "/experiences-and-destinations#destinations",
+  },
   { label: "Learn about special visas", href: "/special-visa" },
   {
     label: "Get travel information for Brazil",

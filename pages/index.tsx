@@ -3,7 +3,7 @@ import SectionImg2 from "../public/Sectionimg2.png";
 import SplitContainer from "../components/layout/SplitContainer";
 import ContainedSection from "@/components/layout/ContainedSection";
 import FullSection from "@/components/layout/FullSection";
-import RegionSlider from "@/features/HomeSlider/HomeSlider";
+import RegionSlider from "@/features/Slider/HomeSlider/HomeSlider";
 import VerticalMenu from "@/features/HamburgerMenu/VerticalMenu";
 import Layout from "@/components/layout/Layout";
 
@@ -14,6 +14,7 @@ export default function Home() {
         title="Tourism Brazil"
         description="Come and experience the magic of Brazil! With its stunning beaches, vibrant culture, and exciting cities, Brazil is the perfect destination for your next vacation."
         isHero={true}
+        backgroundCoolor="white"
       >
         <ContainedSection backgroundColor="white">
           <SplitContainer

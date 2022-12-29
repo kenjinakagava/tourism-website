@@ -36,6 +36,7 @@ const Slider = ({ children, spaceBetween, slidesPerView }: Props) => {
       slidesPerView={slidesPerView !== undefined ? slidesPerView : 1}
       navigation={true}
       pagination={{ clickable: true }}
+      data-testid="slider"
     >
       {children}
     </StyledSwiper>

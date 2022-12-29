@@ -8,7 +8,7 @@ import {
   MidwestRegionSlider,
   SoutheastRegionSlider,
   SouthRegionSlider,
-} from "@/features/RegionsSlider/regions";
+} from "@/features/Slider/RegionsSlider/regions";
 import Layout from "@/components/layout/Layout";
 
 const RegionsTitle = styled(StyledTitle)`
@@ -27,7 +27,7 @@ const Regions = () => {
         title="Regions"
         description="Explore the diverse regions of Brazil, each with its own unique culture, landscapes, and attractions, in Brazil there's always something for everyone."
       >
-        <FullSection>
+        <FullSection id="north">
           <RegionsContainer>
             <RegionsTitle>North</RegionsTitle>
             <Paragraph>
@@ -39,7 +39,7 @@ const Regions = () => {
           </RegionsContainer>
           <NorthRegionSlider />
         </FullSection>
-        <FullSection>
+        <FullSection id="northeast">
           <RegionsContainer>
             <RegionsTitle>Northeast</RegionsTitle>
             <Paragraph>
@@ -51,7 +51,7 @@ const Regions = () => {
           </RegionsContainer>
           <NortheastRegionSlider />
         </FullSection>
-        <FullSection>
+        <FullSection id="midwest">
           <RegionsContainer>
             <RegionsTitle>Midwest</RegionsTitle>
             <Paragraph>
@@ -62,7 +62,7 @@ const Regions = () => {
           </RegionsContainer>
           <MidwestRegionSlider />
         </FullSection>
-        <FullSection>
+        <FullSection id="southeast">
           <RegionsContainer>
             <RegionsTitle>Southeast</RegionsTitle>
             <Paragraph>
@@ -74,7 +74,7 @@ const Regions = () => {
           </RegionsContainer>
           <SoutheastRegionSlider />
         </FullSection>
-        <FullSection>
+        <FullSection id="south">
           <RegionsContainer>
             <RegionsTitle>South</RegionsTitle>
             <Paragraph>

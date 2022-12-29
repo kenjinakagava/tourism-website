@@ -1,6 +1,6 @@
 import * as img from "@/public/home/index";
 import HomeSlideLayout from "./HomeSlideLayout";
-import Slider from "../shared/Slider";
+import Slider from "../Slider";
 import { SwiperSlide } from "swiper/react";
 
 const HomeSlider = () => {
@@ -12,7 +12,7 @@ const HomeSlider = () => {
           paragraph="The North of Brazil is a region with many beautiful and
         interesting sights to see."
           buttonText="EXPERIENCE THE NORTH"
-          href="/north"
+          href="/regions#north"
           backgroundImage={img.NorthRegion}
           mapImage={img.NorthMap}
         />
@@ -23,7 +23,7 @@ const HomeSlider = () => {
           paragraph="The Northeast Region of Brazil is a stunning and diverse region
           that offers something for everyone."
           buttonText="EXPERIENCE THE NORTHEAST"
-          href="/northeast"
+          href="/regions#northeast"
           backgroundImage={img.NortheastRegion}
           mapImage={img.NortheastMap}
         />
@@ -34,7 +34,7 @@ const HomeSlider = () => {
           paragraph="The Midwest Region of Brazil is a vibrant and dynamic region
           that offers a wide range of attractions and activities for visitors."
           buttonText="EXPERIENCE THE MIDWEST"
-          href="/northeast"
+          href="/regions#midwest"
           backgroundImage={img.MidwestRegion}
           mapImage={img.MidwestMap}
         />
@@ -46,7 +46,7 @@ const HomeSlider = () => {
           anyone looking to experience the culture and natural beauty of
           this vibrant country."
           buttonText="EXPERIENCE THE SOUTHEAST"
-          href="/northeast"
+          href="/regions#southeast"
           backgroundImage={img.SoutheastRegion}
           mapImage={img.SoutheastMap}
         />
@@ -57,7 +57,7 @@ const HomeSlider = () => {
           paragraph="The south region of Brazil is a breathtaking destination that is
           home to some of the most stunning natural wonders in the world."
           buttonText="EXPERIENCE THE SOUTH"
-          href="/northeast"
+          href="/regions#south"
           backgroundImage={img.SouthRegion}
           mapImage={img.SouthMap}
         />
