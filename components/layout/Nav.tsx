@@ -57,14 +57,10 @@ const Nav = ({ isHero }: Props) => (
           <Link href="/regions">Regions</Link>
         </li>
         <li>
-          <Link href="/experiences-and-destinations#experiences">
-            Experiences
-          </Link>
+          <Link href="/experiences">Experiences</Link>
         </li>
         <li>
-          <Link href="/experiences-and-destinations#destinations">
-            Destinations
-          </Link>
+          <Link href="/destinations">Destinations</Link>
         </li>
         <li>
           <Link href="/special-visa">Special Visa</Link>

@@ -45,6 +45,13 @@ const IconWrapper = styled.ul`
 `;
 
 const VerticalMenu = ({ isOpen }: VerticalMenuProps) => {
+  // this line is required to access the document without facing a problem when starting the site
+  // this is because document isn't defined in Nodejs, only in the browser, where window is defined
+  if (typeof window !== "undefined") {
+    isOpen
+      ? (document.body.style.overflow = "hidden")
+      : (document.body.style.overflow = "auto");
+  }
   return (
     <MenuScreen isOpen={isOpen}>
       <MenuWrapper>
@@ -65,14 +72,14 @@ const VerticalMenu = ({ isOpen }: VerticalMenuProps) => {
             />
             <IconBlock
               title="Experiences"
-              href="/experiences-and-destinations#experiences"
+              href="/experiences"
               ariaLabel="Discover experiences in Brazil"
               size="large"
               icon={<IoFootstepsSharp />}
             />
             <IconBlock
               title="Destinations"
-              href="/experiences-and-destinations#destinations"
+              href="/destinations"
               ariaLabel="Explore destinations in Brazil"
               size="large"
               icon={<FaMapMarkedAlt />}

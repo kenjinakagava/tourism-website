@@ -12,13 +12,15 @@ interface Props {
 
 const BannerContainer = styled.div`
   padding: 2rem 0;
+  img {
+    max-height: 300px;
+  }
   @media (min-width: 768px) {
     display: flex;
     align-items: center;
     img {
       margin-left: auto;
       overflow: auto;
-      max-height: 300px;
     }
   }
 `;

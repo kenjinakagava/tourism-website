@@ -6,11 +6,11 @@ const links = [
   { label: "View our Regions", href: "/regions" },
   {
     label: "Discover experiences in Brazil",
-    href: "/experiences-and-destinations#experiences",
+    href: "/experiences",
   },
   {
     label: "Explore destinations in Brazil",
-    href: "/experiences-and-destinations#destinations",
+    href: "/destinations",
   },
   { label: "Learn about special visas", href: "/special-visa" },
   {

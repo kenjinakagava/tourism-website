@@ -9,36 +9,51 @@ interface Props {
   children: React.ReactNode;
   spaceBetween?: number;
   slidesPerView?: number;
+  isSmall?: boolean;
+  color?: string;
+  disableNavigationMobile?: boolean;
 }
 
-const StyledSwiper = styled(Swiper)`
+const StyledSwiper = styled(Swiper)<
+  Pick<Props, "isSmall" | "color" | "disableNavigationMobile">
+>`
   .swiper-wrapper {
-    height: 100vh;
+    height: ${(props) => (props.isSmall === true ? "auto" : "100vh")};
   }
   .swiper-button-next,
   .swiper-button-prev {
-    color: white;
+    color: ${(props) => (props.color ? props.color : "white")};
   }
   .swiper-pagination-bullet-active {
-    background: white;
+    background: ${(props) => (props.color ? props.color : "white")};
   }
   img {
     object-fit: cover;
     height: 100%;
     margin: 0 auto;
   }
+  @media (max-width: 768px) {
+    .swiper-button-next,
+    .swiper-button-prev {
+      display: ${(props) => (props.disableNavigationMobile ? "none" : "block")};
+    }
+  }
 `;
-const Slider = ({ children, spaceBetween, slidesPerView }: Props) => {
+const Slider = (props: Props) => {
   return (
     <StyledSwiper
       modules={[Navigation, Pagination, A11y]}
-      spaceBetween={spaceBetween !== undefined ? spaceBetween : 0}
-      slidesPerView={slidesPerView !== undefined ? slidesPerView : 1}
+      spaceBetween={props.spaceBetween !== undefined ? props.spaceBetween : 0}
+      slidesPerView={
+        props.slidesPerView !== undefined ? props.slidesPerView : 1
+      }
       navigation={true}
       pagination={{ clickable: true }}
-      data-testid="slider"
+      isSmall={props.isSmall}
+      color={props.color}
+      disableNavigationMobile={props.disableNavigationMobile}
     >
-      {children}
+      {props.children}
     </StyledSwiper>
   );
 };

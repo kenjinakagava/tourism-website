@@ -6,6 +6,7 @@ import styled from "styled-components";
 import Paragraph from "@/components/typography/Paragraph";
 import Title from "@/components/typography/Title";
 import Announcement from "@/components/layout/Announcement";
+import List from "@/components/layout/List";
 
 const SpecialVisaSection = styled(ContainedSection)`
   min-height: unset;
@@ -20,19 +21,10 @@ const SpecialVisaSection = styled(ContainedSection)`
   }
 `;
 
-const List = styled.ol`
-  font-family: sans-serif;
-  font-size: 1.25rem;
-  margin-bottom: 1rem;
-  @media (min-width: 768px) {
-    font-size: 1.75rem;
-  }
-`;
-
 const SpecialVisa = () => {
   return (
     <Layout
-      title="Special Visa"
+      title="Special Visa | Tourism Brazil"
       description='"Learn about the different types of special visas available for foreign nationals seeking to enter Brazil for work, study, research, or other purposes.'
       banner={<BannerSpecialVisa />}
     >

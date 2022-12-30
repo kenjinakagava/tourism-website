@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <Layout
-        title="Tourism Brazil"
+        title="Come to Brazil | Tourism Brazil"
         description="Come and experience the magic of Brazil! With its stunning beaches, vibrant culture, and exciting cities, Brazil is the perfect destination for your next vacation."
         isHero={true}
         backgroundCoolor="white"

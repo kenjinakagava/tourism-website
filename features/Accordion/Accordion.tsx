@@ -2,6 +2,7 @@ import Title from "@/components/typography/Title";
 import { useState } from "react";
 import styled from "styled-components";
 import { FiChevronUp, FiChevronDown } from "react-icons/fi";
+import Container from "@/components/layout/Container";
 
 interface AccordionProps {
   title: string;
@@ -41,7 +42,7 @@ const Accordion = ({ title, children }: AccordionProps) => {
         </Title>
         {isOpen === true ? <FiChevronUp /> : <FiChevronDown />}
       </AccordionButton>
-      {isOpen === true ? children : null}
+      {isOpen === true ? <Container width="95%">{children}</Container> : null}
     </div>
   );
 };

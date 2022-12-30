@@ -2,6 +2,7 @@ import styled from "styled-components";
 import StyledTitle from "@/components/typography/Title";
 import FullSection from "@/components/layout/FullSection";
 import Paragraph from "@/components/typography/Paragraph";
+import BannerRegions from "@/components/banners/BannerRegions";
 import {
   NorthRegionSlider,
   NortheastRegionSlider,
@@ -24,8 +25,9 @@ const Regions = () => {
   return (
     <>
       <Layout
-        title="Regions"
+        title="Regions of Brazil | Tourism Brazil"
         description="Explore the diverse regions of Brazil, each with its own unique culture, landscapes, and attractions, in Brazil there's always something for everyone."
+        banner={<BannerRegions />}
       >
         <FullSection id="north">
           <RegionsContainer>

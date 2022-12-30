@@ -47,7 +47,7 @@ const HeroHeader = () => {
         height="720"
       />
       <HeroTagline>
-        Brazil, a <GradientText>paradise</GradientText>
+        COME TO<GradientText>BRAZIL</GradientText>
       </HeroTagline>
     </>
   );
