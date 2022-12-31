@@ -9,7 +9,7 @@ interface LayoutProps {
   description: string;
   isHero?: boolean;
   banner?: React.ReactNode;
-  backgroundCoolor?: string;
+  backgroundColor?: string;
 }
 
 const Layout = (props: LayoutProps) => {
@@ -30,7 +30,7 @@ const Layout = (props: LayoutProps) => {
         />
       </Head>
       <Header isHero={props.isHero} banner={props.banner} />
-      <Main backgroundColor={props.backgroundCoolor}>{props.children}</Main>
+      <Main backgroundColor={props.backgroundColor}>{props.children}</Main>
       <Footer />
     </>
   );

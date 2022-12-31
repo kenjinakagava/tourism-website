@@ -38,7 +38,7 @@ const SaveButton = (props: SaveButtonProps) => {
   const [isSaved, setIsSaved] = useState(false);
   useEffect(() => {
     setIsSaved(localStorage.getItem(card.title) ? true : false);
-  }, [isActive]);
+  }, []);
   return (
     <ButtonContainer
       backgroundColor={props.backgroundColor}

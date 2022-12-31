@@ -5,7 +5,6 @@ interface ToggleSavedProps {
 }
 
 const ToggleSaved = ({ card, setIsActive, setIsSaved }: ToggleSavedProps) => {
-  const Card = [card.title, card.paragraph, card.image];
   const isSaved = localStorage.getItem(card.title);
   if (isSaved) {
     setIsActive(false);
@@ -14,7 +13,7 @@ const ToggleSaved = ({ card, setIsActive, setIsSaved }: ToggleSavedProps) => {
   } else {
     setIsActive(true);
     setIsSaved(true);
-    localStorage.setItem(card.title, JSON.stringify(Card));
+    localStorage.setItem(card.title, JSON.stringify({ ...card }));
   }
 };
 
