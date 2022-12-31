@@ -1,4 +1,4 @@
-import Container from "./Container";
+import Container from "../containers/Container";
 import styled from "styled-components";
 
 const Grid = styled(Container)`

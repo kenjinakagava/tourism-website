@@ -1,12 +1,12 @@
 import styled from "styled-components";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import Title from "../typography/Title";
 import Paragraph from "../typography/Paragraph";
-import Container from "./Container";
+import Container from "../containers/Container";
 import SaveButton from "@/features/Saved/SaveButton";
 
 interface CardProps {
-  src: StaticImageData;
+  src: string;
   title: string;
   paragraph?: string;
 }
@@ -65,7 +65,7 @@ const Card = ({ src, title, paragraph }: CardProps) => {
         ) : null}
       </CardContentContainer>
       <Wrapper>
-        <SaveButton />
+        <SaveButton title={title} paragraph={paragraph} image={src} />
       </Wrapper>
     </CardContainer>
   );

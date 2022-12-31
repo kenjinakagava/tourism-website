@@ -1,4 +1,4 @@
-import ExternalLink from "@/components/layout/ExternalLink";
+import ExternalLink from "@/components/typography/ExternalLink";
 import Paragraph from "@/components/typography/Paragraph";
 import AccordionContent from "./AccordionContent";
 
@@ -29,8 +29,7 @@ const AccordionCurrencyExchange = () => {
       </Paragraph>
       <Paragraph>
         FOR MORE INFORMATION ON EXCHANGE RATES, PLEASE VISIT THE{" "}
-        <ExternalLink>CENTRAL BANK</ExternalLink>
-        WEBSITE.
+        <ExternalLink>CENTRAL BANK</ExternalLink> WEBSITE.
       </Paragraph>
     </AccordionContent>
   );

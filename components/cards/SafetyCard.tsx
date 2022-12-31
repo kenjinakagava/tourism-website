@@ -1,6 +1,6 @@
 import Title from "../typography/Title";
 import Paragraph from "../typography/Paragraph";
-import Container from "./Container";
+import Container from "../containers/Container";
 import styled from "styled-components";
 
 interface SafetyCardProps {

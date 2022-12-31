@@ -29,6 +29,10 @@ const AccordionVisasAndTravel = () => {
         </strong>
       </Paragraph>
       <Image src={Plug} alt="" />
+      <Paragraph>
+        *I couldn't find a stock image, I wouldn't do this in a real project,
+        unless I was asked to
+      </Paragraph>
     </AccordionContent>
   );
 };

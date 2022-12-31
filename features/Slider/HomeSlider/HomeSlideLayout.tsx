@@ -1,6 +1,6 @@
 import Image, { StaticImageData } from "next/image";
 import styled from "styled-components";
-import Container from "@/components/layout/Container";
+import Container from "@/components/containers/Container";
 import Title from "@/components/typography/Title";
 import Paragraph from "@/components/typography/Paragraph";
 import Buttonwithicon from "@/components/buttons/ArrowButton";

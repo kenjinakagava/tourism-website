@@ -3,7 +3,7 @@ import Layout from "@/components/layout/Layout";
 import Accordion from "@/features/Accordion/Accordion";
 import ContainedSection from "@/components/layout/ContainedSection";
 import styled from "styled-components";
-import Announcement from "@/components/layout/Announcement";
+import Announcement from "@/components/typography/Announcement";
 import AccordionHealth from "@/features/Accordion/AccordionsTravelInformation/AccordionHealth";
 import AccordionSafety from "@/features/Accordion/AccordionsTravelInformation/AccordionSafety";
 import AccordionVisasAndTravel from "@/features/Accordion/AccordionsTravelInformation/AccordionVisasAndTravel";
@@ -31,7 +31,7 @@ const TravelInformationSection = styled(ContainedSection)`
 const TravelInformation = () => {
   return (
     <Layout
-      title="Travel Information | Tourism Brazil"
+      title="Travel Information for Brazil | Tourism Brazil"
       description="Get all the travel information you need for your trip to Brazil. Find out about visa requirements, safety tips, popular destinations, and more."
       banner={<BannerTravelInformation />}
     >

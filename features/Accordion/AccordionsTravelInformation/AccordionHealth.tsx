@@ -1,4 +1,4 @@
-import ExternalLink from "@/components/layout/ExternalLink";
+import ExternalLink from "@/components/typography/ExternalLink";
 import List from "@/components/layout/List";
 import Paragraph from "@/components/typography/Paragraph";
 import Title from "@/components/typography/Title";
@@ -12,7 +12,7 @@ const HealthAccordionContent = () => {
         Therefore, if you are in an accident, need medical attention, or have
         any health issues, just call the Mobile Emergency Medical Service (SAMU)
         on the toll-free number below.
-        <strong>SAMU (Mobile Emergency Medical Service): 192</strong>
+        <strong> SAMU (Mobile Emergency Medical Service): 192</strong>
       </Paragraph>
       <Title as="h3" fontSize="1.5rem" fontSizeMobile="1.25rem">
         Health Tips
@@ -43,7 +43,7 @@ const HealthAccordionContent = () => {
         any specific type of disease. However, there are some regions in the
         country where there is a Recommendation for Vaccination (ACRV) before
         the visit. For example, in the regions where cases of yellow fever have
-        been documented.
+        been documented.{" "}
         <ExternalLink href="https://antigo.saude.gov.br/component/content/article/1335-saude-do-viajante/9643-preparativos-para-a-viagem#estrangeiros">
           Source: Ministry of Health
         </ExternalLink>

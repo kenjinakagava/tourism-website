@@ -1,4 +1,4 @@
-import ExternalLink from "@/components/layout/ExternalLink";
+import ExternalLink from "@/components/typography/ExternalLink";
 import Paragraph from "@/components/typography/Paragraph";
 import Title from "@/components/typography/Title";
 import AccordionContent from "./AccordionContent";
@@ -28,7 +28,7 @@ const AccordionVisasAndTravel = () => {
           href="https://www.gov.br/mre/pt-br/assuntos/portal-consular/vistos/informacoes-sobre-vistos-para-estrangeiros-viajarem-ao-brasil#voceprecisa"
         >
           click here.
-        </ExternalLink>
+        </ExternalLink>{" "}
         Brazil’s visa policy is based on the principle of reciprocity. This
         basically means that most countries that require visas from Brazilian
         citizens to enter their territories will also need a visa to travel to

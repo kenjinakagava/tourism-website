@@ -1,4 +1,4 @@
-import ExternalLink from "@/components/layout/ExternalLink";
+import ExternalLink from "@/components/typography/ExternalLink";
 import List from "@/components/layout/List";
 import styled from "styled-components";
 import AccordionContent from "./AccordionContent";

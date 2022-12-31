@@ -1,4 +1,4 @@
-import Card from "@/components/layout/Card";
+import Card from "@/components/cards/Card";
 import * as imgs from "@/public/destinations";
 
 const DestinationCards = () => {

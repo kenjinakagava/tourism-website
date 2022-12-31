@@ -5,7 +5,7 @@ import ContainedSection from "@/components/layout/ContainedSection";
 import styled from "styled-components";
 import Paragraph from "@/components/typography/Paragraph";
 import Title from "@/components/typography/Title";
-import Announcement from "@/components/layout/Announcement";
+import Announcement from "@/components/typography/Announcement";
 import List from "@/components/layout/List";
 
 const SpecialVisaSection = styled(ContainedSection)`

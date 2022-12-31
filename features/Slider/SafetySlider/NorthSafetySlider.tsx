@@ -1,4 +1,4 @@
-import SafetyCard from "@/components/layout/SafetyCard";
+import SafetyCard from "@/components/cards/SafetyCard";
 import Title from "@/components/typography/Title";
 import { SwiperSlide } from "swiper/react";
 import Slider from "../Slider";

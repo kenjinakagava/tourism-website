@@ -2,7 +2,7 @@ import Title from "../typography/Title";
 import Paragraph from "../typography/Paragraph";
 import Image from "next/image";
 import styled from "styled-components";
-import Container from "../layout/Container";
+import Container from "../containers/Container";
 
 interface Props {
   illustration?: string;

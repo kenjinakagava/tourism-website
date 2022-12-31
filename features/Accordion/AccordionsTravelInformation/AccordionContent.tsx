@@ -1,4 +1,4 @@
-import Container from "@/components/layout/Container";
+import Container from "@/components/containers/Container";
 import Title from "@/components/typography/Title";
 
 interface AccordionContentProps {

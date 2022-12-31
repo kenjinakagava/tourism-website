@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Container from "./Container";
+import Container from "../containers/Container";
 
 const Announcement = styled(Container)`
   background-color: #f1f5f9;

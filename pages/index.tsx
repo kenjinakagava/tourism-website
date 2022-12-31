@@ -1,6 +1,6 @@
 import SectionImg1 from "../public/Sectionimg1.jpg";
 import SectionImg2 from "../public/Sectionimg2.png";
-import SplitContainer from "../components/layout/SplitContainer";
+import SplitContainer from "../components/containers/SplitContainer";
 import ContainedSection from "@/components/layout/ContainedSection";
 import FullSection from "@/components/layout/FullSection";
 import RegionSlider from "@/features/Slider/HomeSlider/HomeSlider";

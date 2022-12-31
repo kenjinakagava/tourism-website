@@ -9,7 +9,7 @@ const Experiences = () => {
   return (
     <>
       <Layout
-        title="Experience Brazil | Tourism Brazil"
+        title="Experiences in Brazil | Tourism Brazil"
         description="Brazil is a country full of adventure and excitement, experience the thrill of Brazil's diverse culture, vibrant cities, and breathtaking natural beauty"
         banner={<BannerExperiences />}
       >

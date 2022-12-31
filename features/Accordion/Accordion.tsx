@@ -2,7 +2,7 @@ import Title from "@/components/typography/Title";
 import { useState } from "react";
 import styled from "styled-components";
 import { FiChevronUp, FiChevronDown } from "react-icons/fi";
-import Container from "@/components/layout/Container";
+import Container from "@/components/containers/Container";
 
 interface AccordionProps {
   title: string;
