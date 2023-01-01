@@ -45,6 +45,11 @@ const SaveButton = (props: SaveButtonProps) => {
       onClick={() => ToggleSaved({ card, setIsActive, setIsSaved })}
       isActive={isActive}
       isSaved={isSaved}
+      aria-label={
+        (isActive || isSaved) === true
+          ? `Remove ${props.title} from your favorite locations`
+          : `Add ${props.title} to your favorite locations`
+      }
     >
       <FaHeart />
     </ButtonContainer>

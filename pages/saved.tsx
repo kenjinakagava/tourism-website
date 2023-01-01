@@ -4,6 +4,7 @@ import FullSection from "@/components/layout/FullSection";
 import Grid from "@/components/layout/Grid";
 import Layout from "@/components/layout/Layout";
 import SavedContent from "@/features/Saved/SavedContent";
+import SavingNote from "@/features/Saved/SavingNote";
 import { useEffect, useState } from "react";
 
 interface Props {
@@ -26,7 +27,6 @@ const Saved = () => {
       }
     });
     setSavedLocations(savedLocations);
-    console.log(savedLocations);
   }, []);
   return (
     <Layout
@@ -36,7 +36,7 @@ const Saved = () => {
     >
       <>
         <FullSection padding="3rem 0">
-          {savedLocations?.length === 0 ? <SavedContent /> : null}
+          {savedLocations?.length === 0 ? <SavedContent /> : <SavingNote />}
           <Grid>
             {savedLocations?.map((location) => (
               <Card
