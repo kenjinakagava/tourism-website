@@ -14,7 +14,7 @@ export default function Home() {
         title="Come to Brazil | Tourism Brazil"
         description="Come and experience the magic of Brazil! With its stunning beaches, vibrant culture, and exciting cities, Brazil is the perfect destination for your next vacation."
         isHero={true}
-        backgroundCoolor="white"
+        backgroundColor="white"
       >
         <ContainedSection backgroundColor="white">
           <SplitContainer

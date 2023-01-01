@@ -61,7 +61,7 @@ const Footer = () => {
         <Wrapper>
           <Logo dark={true} version="desktop" />
           <div>
-            <Title heading={5} fontSize="1.5rem" fontSizeMobile="1.5rem">
+            <Title as="h5" fontSize="1.5rem" fontSizeMobile="1.5rem">
               Menu
             </Title>
             <List>
@@ -94,7 +94,7 @@ const Footer = () => {
             </List>
           </div>
           <div>
-            <Title heading={5} fontSize="1.5rem" fontSizeMobile="1.5rem">
+            <Title as="h5" fontSize="1.5rem" fontSizeMobile="1.5rem">
               Contact
             </Title>
             <Address as={"address"}>
