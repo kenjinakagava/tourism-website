@@ -3,6 +3,7 @@ import Link from "next/link";
 import Title from "../typography/Title";
 import Container from "../containers/Container";
 import Logo from "./Logo";
+
 const FooterContainer = styled(Container)`
   min-height: clamp(20vh, 30vh, 250px);
   display: flex;
@@ -61,7 +62,7 @@ const Footer = () => {
         <Wrapper>
           <Logo dark={true} version="desktop" />
           <div>
-            <Title as="h5" fontSize="1.5rem" fontSizeMobile="1.5rem">
+            <Title as="h3" fontSize="1.5rem" fontSizeMobile="1.5rem">
               Menu
             </Title>
             <List>
@@ -94,7 +95,7 @@ const Footer = () => {
             </List>
           </div>
           <div>
-            <Title as="h5" fontSize="1.5rem" fontSizeMobile="1.5rem">
+            <Title as="h3" fontSize="1.5rem" fontSizeMobile="1.5rem">
               Contact
             </Title>
             <Address as={"address"}>

@@ -1,6 +1,4 @@
 import styled from "styled-components";
-import HomeHeroFHD from "public/HomeHeroFHD.webp";
-import HomeHeroHD from "public/HomeHeroHD.webp";
 
 const HeroTagline = styled.h1`
   display: flex;
@@ -19,7 +17,7 @@ const HeroTagline = styled.h1`
   }
 `;
 
-const HeroBanner = styled.img`
+const HeroBanner = styled.div`
   position: absolute;
   object-fit: cover;
   top: 0;
@@ -27,6 +25,8 @@ const HeroBanner = styled.img`
   width: 100%;
   height: 100%;
   z-index: -1;
+  background-size: cover;
+  background-image: url("HomeHeroFHD.webp");
 `;
 
 const GradientText = styled.span`
@@ -39,13 +39,7 @@ const GradientText = styled.span`
 const HeroHeader = () => {
   return (
     <>
-      <HeroBanner
-        src={HomeHeroHD.src}
-        alt=""
-        srcSet={`${HomeHeroHD.src} 840w, ${HomeHeroFHD.src} 1080w`}
-        width="1080"
-        height="720"
-      />
+      <HeroBanner />
       <HeroTagline>
         COME TO<GradientText>BRAZIL</GradientText>
       </HeroTagline>

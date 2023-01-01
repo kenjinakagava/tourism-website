@@ -34,7 +34,7 @@ const MobileLogo = styled.img`
 const Logo = ({ dark, version }: Props) => {
   if (version === "desktop") {
     return (
-      <Link href="/">
+      <Link href="/" aria-label="Go back to homepage">
         {dark ? (
           <DesktopLogo src={LogoDesktopDark.src} alt="" />
         ) : (

@@ -1,5 +1,5 @@
-import SectionImg1 from "../public/Sectionimg1.jpg";
-import SectionImg2 from "../public/Sectionimg2.png";
+import VisitBrazil from "@/public/VisitBrazil.webp";
+import BrazilFlora from " @/public/BrazilFlora.webp";
 import SplitContainer from "../components/containers/SplitContainer";
 import ContainedSection from "@/components/layout/ContainedSection";
 import FullSection from "@/components/layout/FullSection";
@@ -12,23 +12,23 @@ export default function Home() {
     <>
       <Layout
         title="Come to Brazil | Tourism Brazil"
-        description="Come and experience the magic of Brazil! With its stunning beaches, vibrant culture, and exciting cities, Brazil is the perfect destination for your next vacation."
+        description="Come and experience the magic of Brazil! Create Unforgettable Summer Vacation Memories, Brazil is the perfect travel destination for your next vacation."
         isHero={true}
         backgroundColor="white"
       >
         <ContainedSection backgroundColor="white">
           <SplitContainer
-            src={SectionImg1}
-            alt={"a"}
-            href="/"
+            src={VisitBrazil}
+            alt=""
+            href="/destinations"
             buttonLabel="DISCOVER"
             title="DISCOVER THE BEAUTY OF BRAZIL"
             paragraph="Come and experience the magic of Brazil! With its stunning beaches, vibrant culture, and exciting cities, Brazil is the perfect destination for your next vacation. From the Amazon rainforest to the bustling streets of Rio de Janeiro, Brazil offers a wide range of experiences for every type of traveler."
           />
           <SplitContainer
-            src={SectionImg2}
-            alt={"a"}
-            href="/"
+            src={BrazilFlora}
+            alt=""
+            href="/experiences"
             buttonLabel="EXPLORE"
             title="EXPLORE BRAZIL'S NATURAL WONDERS."
             orientation="left"

@@ -34,7 +34,7 @@ const ButtonLink = styled(Link)<Pick<Props, "backgroundColor" | "color">>`
 `;
 
 // temp name
-const Buttonwithicon = ({ children, href, color, backgroundColor }: Props) => {
+const ArrowButton = ({ children, href, color, backgroundColor }: Props) => {
   return (
     <ButtonLink color={color} backgroundColor={backgroundColor} href={href}>
       {children}
@@ -43,4 +43,4 @@ const Buttonwithicon = ({ children, href, color, backgroundColor }: Props) => {
   );
 };
 
-export default Buttonwithicon;
+export default ArrowButton;

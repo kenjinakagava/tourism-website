@@ -3,8 +3,8 @@ import styled from "styled-components";
 import Container from "@/components/containers/Container";
 import Title from "@/components/typography/Title";
 import Paragraph from "@/components/typography/Paragraph";
-import Buttonwithicon from "@/components/buttons/ArrowButton";
 import BlackFilter from "@/components/layout/BlackFilter";
+import ArrowButton from "@/components/buttons/ArrowButton";
 
 interface Props {
   title: string;
@@ -50,13 +50,13 @@ const HomeSlideLayout = (props: Props) => {
           >
             {props.paragraph}
           </Paragraph>
-          <Buttonwithicon
+          <ArrowButton
             href={props.href}
             color={props.buttonColor}
             backgroundColor={props.buttonBackgroundColor}
           >
             {props.buttonText}
-          </Buttonwithicon>
+          </ArrowButton>
         </Container>
         {props.mapImage !== undefined ? (
           <Image src={props.mapImage} alt="" />
