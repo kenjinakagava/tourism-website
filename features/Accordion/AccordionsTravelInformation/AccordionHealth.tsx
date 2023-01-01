@@ -4,7 +4,7 @@ import Paragraph from "@/components/typography/Paragraph";
 import Title from "@/components/typography/Title";
 import AccordionContent from "./AccordionContent";
 
-const HealthAccordionContent = () => {
+const AccordionHealth = () => {
   return (
     <AccordionContent title="Health">
       <Paragraph>
@@ -59,4 +59,4 @@ const HealthAccordionContent = () => {
   );
 };
 
-export default HealthAccordionContent;
+export default AccordionHealth;

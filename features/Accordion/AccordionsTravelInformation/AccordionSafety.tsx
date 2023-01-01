@@ -7,7 +7,7 @@ import SouthSafetySlider from "@/features/Slider/SafetySlider/SouthSafetySlider"
 import NortheastSafetySlider from "@/features/Slider/SafetySlider/NortheastSafetySlider";
 import NorthSafetySlider from "@/features/Slider/SafetySlider/NorthSafetySlider";
 
-const HealthAccordionContent = () => {
+const AccordionSafety = () => {
   return (
     <AccordionContent title="Safety">
       <Paragraph>
@@ -41,4 +41,4 @@ const HealthAccordionContent = () => {
   );
 };
 
-export default HealthAccordionContent;
+export default AccordionSafety;

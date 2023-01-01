@@ -2,7 +2,7 @@ import List from "@/components/layout/List";
 import Paragraph from "@/components/typography/Paragraph";
 import AccordionContent from "./AccordionContent";
 
-const AccordionWeather = () => {
+const AccordionTelecommunications = () => {
   return (
     <AccordionContent title="Telecommunications">
       <Paragraph>
@@ -43,4 +43,4 @@ const AccordionWeather = () => {
   );
 };
 
-export default AccordionWeather;
+export default AccordionTelecommunications;

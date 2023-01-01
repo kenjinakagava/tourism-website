@@ -3,7 +3,7 @@ import Image from "next/image";
 import AccordionContent from "./AccordionContent";
 import Plug from "@/public/Plug.webp";
 
-const AccordionVisasAndTravel = () => {
+const AccordionPowerVoltage = () => {
   return (
     <AccordionContent title="Power Voltage">
       <Paragraph>
@@ -37,4 +37,4 @@ const AccordionVisasAndTravel = () => {
   );
 };
 
-export default AccordionVisasAndTravel;
+export default AccordionPowerVoltage;

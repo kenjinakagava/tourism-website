@@ -2,7 +2,7 @@ import Paragraph from "@/components/typography/Paragraph";
 import AccordionContent from "./AccordionContent";
 import List from "@/components/layout/List";
 
-const AccordionVisasAndTravel = () => {
+const AccordionEmergencyNumber = () => {
   return (
     <AccordionContent title="Emergency Numbers">
       <Paragraph>
@@ -19,4 +19,4 @@ const AccordionVisasAndTravel = () => {
   );
 };
 
-export default AccordionVisasAndTravel;
+export default AccordionEmergencyNumber;
