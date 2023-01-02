@@ -1,34 +1,18 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Brazil Tourism Website
 
-## Getting Started
+Welcome to the Brazil Tourism Website! This website was built using the following technologies:
 
-First, run the development server:
+- [React](https://reactjs.org/) for the frontend user interface
+- [Next.js](https://nextjs.org/) for server-rendered React pages
+- [TypeScript](https://www.typescriptlang.org/) for type-checking and improved code reliability
+- [Styled-components](https://styled-components.com/) for styling the website
+- [Jest](https://jestjs.io/) for unit testing
+- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro) for testing React components
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Why I built the project this way
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+I chose to use React for the frontend because it is a popular and powerful JavaScript library for building user interfaces. Next.js for it's automatic image optimization. TypeScript was added for type-checking and to catch any potential errors before runtime. Styled-components was chosen for styling because it allows for easy management of component-specific styles. Jest and React Testing Library were added for thorough testing of the application.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## If I had more time, I would change this
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+If I had more time, I would like to add more features to the website such as a search bar to filter through different tourism destinations, a map to show the location of each destination, and the ability to book tours and accommodations directly through the website. I would also like to add more unit tests to increase the overall test coverage of the application.  
