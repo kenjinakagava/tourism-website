@@ -18,7 +18,7 @@ const FooterContainer = styled(Container)`
 const List = styled.ul`
   display: flex;
   flex-direction: column;
-  gap: 0.625rem;
+  gap: 1rem;
   li {
     font-family: "Dosis", sans-serif;
     font-weight: 700;
@@ -55,6 +55,17 @@ const Wrapper = styled.div`
   }
 `;
 
+const NavLink = styled(Link)`
+  padding: 1rem 0;
+  /* To comply with Lighthouse standards for tap targets (48px width and height) 
+  I'm adding a little bit of padding to the first child as its text content 
+  "Saved" atm doesn't stretch the element enough to fulfill this requirement.
+  */
+  &:first-child {
+    padding-right: 0.125rem;
+  }
+`;
+
 const Footer = () => {
   return (
     <footer>
@@ -69,26 +80,28 @@ const Footer = () => {
               <li>
                 <NestedList>
                   <li>
-                    <Link href="/saved">Saved</Link>
+                    <NavLink href="/saved">Saved</NavLink>
                   </li>
                   <li>
-                    <Link href="/regions">Regions</Link>
+                    <NavLink href="/regions">Regions</NavLink>
                   </li>
                   <li>
-                    <Link href="/experiences">Experiences</Link>
+                    <NavLink href="/experiences">Experiences</NavLink>
                   </li>
                 </NestedList>
               </li>
               <li>
                 <NestedList>
                   <li>
-                    <Link href="/destinations">Destinations</Link>
+                    <NavLink href="/destinations">Destinations</NavLink>
                   </li>
                   <li>
-                    <Link href="/special-visa">Special Visa</Link>
+                    <NavLink href="/special-visa">Special Visa</NavLink>
                   </li>
                   <li>
-                    <Link href="/travel-information">Travel Information</Link>
+                    <NavLink href="/travel-information">
+                      Travel Information
+                    </NavLink>
                   </li>
                 </NestedList>
               </li>

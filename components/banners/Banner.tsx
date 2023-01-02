@@ -1,11 +1,10 @@
 import Title from "../typography/Title";
-import Paragraph from "../typography/Paragraph";
 import Image from "next/image";
 import styled from "styled-components";
 import Container from "../containers/Container";
 
 interface Props {
-  illustration?: string;
+  illustration: string;
   title: string;
   isH1?: boolean;
 }
@@ -39,9 +38,7 @@ const Banner = ({ illustration, title, isH1 }: Props) => {
     <BannerContainer>
       <BannerContentWrapper>
         <Title as={isH1 === true ? "h1" : "h2"}>{title}</Title>
-        {illustration !== undefined ? (
-          <Image src={illustration} alt="" />
-        ) : null}
+        <Image src={illustration} alt="" priority={true} />
       </BannerContentWrapper>
     </BannerContainer>
   );

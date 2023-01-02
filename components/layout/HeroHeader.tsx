@@ -19,7 +19,6 @@ const HeroTagline = styled.h1`
 
 const HeroBanner = styled.div`
   position: absolute;
-  object-fit: cover;
   top: 0;
   left: 0;
   width: 100%;
@@ -27,6 +26,7 @@ const HeroBanner = styled.div`
   z-index: -1;
   background-size: cover;
   background-image: url("HomeHeroFHD.webp");
+  background-position: center;
 `;
 
 const GradientText = styled.span`

@@ -1,5 +1,5 @@
 import VisitBrazil from "@/public/VisitBrazil.webp";
-import BrazilFlora from " @/public/BrazilFlora.webp";
+import BrazilFlora from "@/public/BrazilFlora.webp";
 import SplitContainer from "../components/containers/SplitContainer";
 import ContainedSection from "@/components/layout/ContainedSection";
 import FullSection from "@/components/layout/FullSection";

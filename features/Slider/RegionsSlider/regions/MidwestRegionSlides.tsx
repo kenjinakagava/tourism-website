@@ -1,11 +1,11 @@
 import * as imgs from "@/public/regions/Midwest";
 import { SwiperSlide } from "swiper/react";
+import Slider from "../../Slider";
 import RegionSlideLayout from "../RegionSlideLayout";
-import RegionSlider from "../RegionSlider";
 
 const MidwestRegionSlider = () => {
   return (
-    <RegionSlider>
+    <Slider bulletsize="48px">
       <SwiperSlide>
         <RegionSlideLayout
           src={imgs.Brasilia}
@@ -41,7 +41,7 @@ const MidwestRegionSlider = () => {
           paragraph="The Pantanal is the world's largest wetland area and is home to a diverse range of flora and fauna, including jaguars, caimans, anacondas, and a variety of bird species. It's the perfect destination for nature lovers, birdwatchers, and adventurers."
         />
       </SwiperSlide>
-    </RegionSlider>
+    </Slider>
   );
 };
 

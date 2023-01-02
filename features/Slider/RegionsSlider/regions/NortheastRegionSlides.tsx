@@ -1,11 +1,11 @@
 import * as imgs from "@/public/regions/Northeast";
 import { SwiperSlide } from "swiper/react";
+import Slider from "../../Slider";
 import RegionSlideLayout from "../RegionSlideLayout";
-import RegionSlider from "../RegionSlider";
 
 const NortheastRegionSlider = () => {
   return (
-    <RegionSlider>
+    <Slider bulletsize="48px">
       <SwiperSlide>
         <RegionSlideLayout
           src={imgs.Alagoas}
@@ -41,7 +41,7 @@ const NortheastRegionSlider = () => {
           paragraph="In Rio Grande do Norte, visitors can explore the state's rich cultural history, visit beautiful beaches, and try delicious local cuisine. Whether you're interested in culture, history, or relaxation, Rio Grande do Norte has something for everyone."
         />
       </SwiperSlide>
-    </RegionSlider>
+    </Slider>
   );
 };
 

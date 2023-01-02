@@ -11,6 +11,7 @@ import {
   SouthRegionSlider,
 } from "@/features/Slider/RegionsSlider/regions";
 import Layout from "@/components/layout/Layout";
+import RegionSlider from "@/features/Slider/RegionsSlider/RegionSlider";
 
 const RegionsTitle = styled(StyledTitle)`
   padding-top: 1rem;

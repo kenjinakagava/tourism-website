@@ -1,11 +1,11 @@
 import * as imgs from "@/public/regions/South";
 import { SwiperSlide } from "swiper/react";
+import Slider from "../../Slider";
 import RegionSlideLayout from "../RegionSlideLayout";
-import RegionSlider from "../RegionSlider";
 
 const SouthRegionSlider = () => {
   return (
-    <RegionSlider>
+    <Slider bulletsize="48px">
       <SwiperSlide>
         <RegionSlideLayout
           src={imgs.Curitiba}
@@ -41,7 +41,7 @@ const SouthRegionSlider = () => {
           paragraph="Porto Alegre is known for its vibrant cultural scene, with a variety of museums, galleries, and theaters to choose from. The city is also home to a number of music venues, from traditional Brazilian music to contemporary music and beyond."
         />
       </SwiperSlide>
-    </RegionSlider>
+    </Slider>
   );
 };
 

@@ -1,11 +1,11 @@
 import * as imgs from "@/public/regions/North";
 import { SwiperSlide } from "swiper/react";
+import Slider from "../../Slider";
 import RegionSlideLayout from "../RegionSlideLayout";
-import RegionSlider from "../RegionSlider";
 
 const NorthRegionSlider = () => {
   return (
-    <RegionSlider>
+    <Slider bulletsize="48px">
       <SwiperSlide>
         <RegionSlideLayout
           src={imgs.Amazonas}
@@ -41,7 +41,7 @@ const NorthRegionSlider = () => {
           paragraph="Tocantins is home to several national parks and nature reserves, including the Chapada dos Veadeiros National Park, which is known for its beautiful waterfalls and rock formations. Tocantins is also home to a variety of wildlife, including jaguars, anteaters, and pink dolphins."
         />
       </SwiperSlide>
-    </RegionSlider>
+    </Slider>
   );
 };
 

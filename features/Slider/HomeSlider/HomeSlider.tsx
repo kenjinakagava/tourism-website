@@ -5,7 +5,7 @@ import { SwiperSlide } from "swiper/react";
 
 const HomeSlider = () => {
   return (
-    <Slider>
+    <Slider bulletsize="16px">
       <SwiperSlide>
         <HomeSlideLayout
           title="North"

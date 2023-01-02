@@ -20,6 +20,14 @@ const ImageContainer = styled.div``;
 
 const RegionSlideImage = styled(Image)`
   z-index: -1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  color: transparent;
   border-radius: 4px;
 `;
 
@@ -27,7 +35,7 @@ const RegionSlideLayout = ({ src, title, paragraph }: RegionProps) => {
   return (
     <Card>
       <ImageContainer>
-        <RegionSlideImage src={src} alt="" fill={true} sizes="100vw" />
+        <RegionSlideImage src={src} alt="" sizes="100vw" />
         <BlackFilter />
       </ImageContainer>
       <ContentContainer>

@@ -24,16 +24,13 @@ const SlideContent = styled.div`
   display: flex;
   min-height: 100%;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   position: absolute;
   z-index: 51;
   top: 0;
   left: 0%;
   right: 0%;
   gap: 1rem;
-  @media (min-width: 768px) {
-    justify-content: center;
-  }
 `;
 
 const HomeSlideLayout = (props: Props) => {

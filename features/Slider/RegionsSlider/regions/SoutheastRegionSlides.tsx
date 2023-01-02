@@ -1,11 +1,11 @@
 import * as imgs from "@/public/regions/Southeast";
 import { SwiperSlide } from "swiper/react";
+import Slider from "../../Slider";
 import RegionSlideLayout from "../RegionSlideLayout";
-import RegionSlider from "../RegionSlider";
 
 const SoutheastRegionSlider = () => {
   return (
-    <RegionSlider>
+    <Slider bulletsize="48px">
       <SwiperSlide>
         <RegionSlideLayout
           src={imgs.AtlanticForest}
@@ -41,7 +41,7 @@ const SoutheastRegionSlider = () => {
           paragraph="São Paulo is a hub for business, culture, and entertainment, with something for everyone. The city is home to a variety of museums, galleries, theaters, and music venues, as well as world-class restaurants, shopping centers, and nightlife."
         />
       </SwiperSlide>
-    </RegionSlider>
+    </Slider>
   );
 };
 
